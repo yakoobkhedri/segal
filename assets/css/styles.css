@@ -223,6 +223,10 @@ a {
 }
 
 /* right */
+.-right-40 {
+    right: -40px;
+}
+
 .right-159 {
     right: 159px;
 }
@@ -626,34 +630,59 @@ footer {
 @media only screen and (min-width:1200px) {}
 
 @media only screen and (max-width:1200px) {
-    #contact{
+    #contact {
         margin-top: 450px;
-}
-    #contact .w-md-100{
+    }
+
+    #contact .w-md-100 {
         width: 100%;
     }
-    #contact .h-md-143{
+
+    #contact .h-md-143 {
         height: 143px;
     }
-    #contact .rounded-md-42{
+
+    #contact .rounded-md-42 {
         border-radius: 42px;
     }
-    #contact .contactHeading{
-        left: -40px!important;
-        right: -40px!important;
+
+    #contact .contactHeading {
+        left: -40px !important;
+        right: -40px !important;
         z-index: 2;
         top: -83px;
     }
-    #contact .contactShape{
+
+    #contact .contactShape {
         width: 90%;
         height: 35px;
         border-radius: 0 0 26px 26px;
     }
-    #contact .translate-x-md-90{
+
+    #contact .translate-x-md-90 {
         transform: rotate(90deg)translateX(-49px);
     }
+
     #contact .-top-165 {
         top: -370px;
+    }
+
+    #customer {
+        margin-top: 0;
+    }
+
+    #shoar {
+        margin-top: 476px;
+      }
+
+    #shoar .h-172 {
+        height: auto;
+    }
+    #shoar .h-sm-148{
+        height: 148px;
+    }
+    #shoar .-top-36 {
+        top: -330px;
       }
 }
 
@@ -661,9 +690,9 @@ footer {
     #services .h-486 {
         height: auto;
     }
-
+    
     #about {
-        margin-top: 493px;
+        margin-top: 501px;
     }
 
     #about .col-lg-5 {
@@ -675,7 +704,8 @@ footer {
         top: -332px;
     }
 
-    #about .aboutDescription {
+    #about .aboutDescription,
+    #contact .contactDescription {
         font-size: 14px;
         text-align: justify;
     }
@@ -683,17 +713,21 @@ footer {
     #about .fs-22 {
         font-size: 16px;
     }
+
     #about p.text-gray {
         font-size: 12px;
     }
-    #contact .rounded-md-42{
+
+    #contact .rounded-md-42 {
         border-radius: 32px;
     }
+
     #contact .contactHeading {
         left: -24px !important;
         right: -24px !important;
-      }
-      #contact .w-sm-100{
+    }
+
+    #contact .w-sm-100 {
         width: 100%;
     }
 }
@@ -743,12 +777,17 @@ footer {
     #services .w-316 {
         width: 268px;
     }
+
+    .customer .swiper-slide {
+        width: 237px !important;
+    }
+
+    .customer p.text-secondary {
+        font-size: 12px;
+    }
 }
 
 @media only screen and (max-width:576px) {
-    #about .-top-77 {
-        top: -237px;
-      }
 }
 
 @media only screen and (max-width:400px) {}

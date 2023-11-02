@@ -50,16 +50,18 @@ var services = new Swiper(".services", {
     },
 });
 var customer = new Swiper(".customer", {
+    loop:true,
     slidesPerView: 1.2,
-    spaceBetween: 27,
+    spaceBetween: 19,
     breakpoints:{
      576:{
         slidesPerView: 2,
+        spaceBetween: 27,
      },
      992:{
         slidesPerView: 3,
      },
-     1280:{
+     1400:{
         slidesPerView: 4,
      },
     },
