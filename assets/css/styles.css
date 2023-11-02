@@ -36,6 +36,10 @@ a {
     cursor: pointer;
 }
 
+.text-justify{
+    text-align: justify;
+}
+
 /* overflow */
 .overflow-x-hidden {
     overflow-x: hidden;
@@ -202,6 +206,10 @@ a {
 }
 
 /* bottom */
+.-bottom-210{
+    bottom: -210px;
+}
+
 .-bottom-53 {
     bottom: -53px;
 }
@@ -473,6 +481,12 @@ a {
     margin-top: 305px;
 }
 
+/* margin top */
+
+.mb-235{
+    margin-bottom: 235px;
+}
+
 /* transform */
 .-rotate-6 {
     transform: rotate(-6deg);
@@ -617,14 +631,6 @@ a {
 
 .phoneIcon:hover span {
     display: flex !important;
-}
-
-/* footer */
-footer {
-    background-image: url('../img/footerWave.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 @media only screen and (min-width:1200px) {}
@@ -788,6 +794,9 @@ footer {
 }
 
 @media only screen and (max-width:576px) {
+    #about .-top-77 {
+        top: -296px;
+    }
 }
 
 @media only screen and (max-width:400px) {}
