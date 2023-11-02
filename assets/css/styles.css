@@ -625,7 +625,37 @@ footer {
 
 @media only screen and (min-width:1200px) {}
 
-@media only screen and (max-width:1200px) {}
+@media only screen and (max-width:1200px) {
+    #contact{
+        margin-top: 450px;
+}
+    #contact .w-md-100{
+        width: 100%;
+    }
+    #contact .h-md-143{
+        height: 143px;
+    }
+    #contact .rounded-md-42{
+        border-radius: 42px;
+    }
+    #contact .contactHeading{
+        left: -40px!important;
+        right: -40px!important;
+        z-index: 2;
+        top: -83px;
+    }
+    #contact .contactShape{
+        width: 90%;
+        height: 35px;
+        border-radius: 0 0 26px 26px;
+    }
+    #contact .translate-x-md-90{
+        transform: rotate(90deg)translateX(-49px);
+    }
+    #contact .-top-165 {
+        top: -370px;
+      }
+}
 
 @media only screen and (max-width:992px) {
     #services .h-486 {
@@ -642,7 +672,7 @@ footer {
     }
 
     #about .-top-77 {
-        top: -293px;
+        top: -332px;
     }
 
     #about .aboutDescription {
@@ -653,9 +683,18 @@ footer {
     #about .fs-22 {
         font-size: 16px;
     }
-
     #about p.text-gray {
         font-size: 12px;
+    }
+    #contact .rounded-md-42{
+        border-radius: 32px;
+    }
+    #contact .contactHeading {
+        left: -24px !important;
+        right: -24px !important;
+      }
+      #contact .w-sm-100{
+        width: 100%;
     }
 }
 
@@ -706,6 +745,10 @@ footer {
     }
 }
 
-@media only screen and (max-width:576px) {}
+@media only screen and (max-width:576px) {
+    #about .-top-77 {
+        top: -237px;
+      }
+}
 
 @media only screen and (max-width:400px) {}
