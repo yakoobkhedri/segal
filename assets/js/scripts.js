@@ -1,3 +1,13 @@
+// dropdown menu
+
+let productMenu=document.getElementById('productMenu')
+
+productMenu.addEventListener('mouseover',function () {
+    this.parentElement.nextElementSibling.classList.add('active');
+    this.parentElement.nextElementSibling.nextElementSibling.classList.add('active');
+    this.parentElement.parentElement.style.paddingBottom='3px'
+})
+
 // swiper
 var models = new Swiper(".banner", {
     loop: true,

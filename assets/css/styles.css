@@ -128,6 +128,10 @@ a {
 }
 
 /* padding */
+.pb-26{
+    padding-bottom: 26px;
+}
+
 .py-13 {
     padding-top: 13px;
     padding-bottom: 13px;
@@ -598,6 +602,24 @@ a {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.dropdown1,.dropdown2{
+    max-height: 0;
+    padding-top: 0!important;
+    padding-bottom: 0!important;
+    overflow: hidden;
+    margin-top: 0!important;
+    margin-bottom: 0!important;
+    transition: all .4s;
+}
+
+.dropdown1.active,.dropdown2.active{
+    max-height: 2000px;
+    padding-top: 26px!important;
+    padding-bottom: 26px!important;
+    margin-bottom: 26px!important;
+    overflow: visible;
 }
 
 .dropdown1::before {
