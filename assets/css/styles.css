@@ -36,7 +36,7 @@ a {
     cursor: pointer;
 }
 
-.text-justify{
+.text-justify {
     text-align: justify;
 }
 
@@ -206,7 +206,7 @@ a {
 }
 
 /* bottom */
-.-bottom-210{
+.-bottom-210 {
     bottom: -210px;
 }
 
@@ -483,7 +483,7 @@ a {
 
 /* margin top */
 
-.mb-235{
+.mb-235 {
     margin-bottom: 235px;
 }
 
@@ -600,6 +600,11 @@ a {
     background-position: center;
 }
 
+.dropdown1::before {
+    right: 403px;
+    top: -6px!important;
+}
+
 /* banner */
 #banner {
     background-image: url('../img/swiper-shape.png');
@@ -609,7 +614,8 @@ a {
 }
 
 /* contact icons */
-.contact-hover::after {
+.contact-hover::after,
+.dropdown1::before {
     content: '';
     position: absolute;
     background-color: #ffffff;
@@ -618,6 +624,7 @@ a {
     height: 18px;
     left: 23px;
     top: 39px;
+    border-radius: 5px;
     position: absolute;
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
@@ -633,9 +640,17 @@ a {
     display: flex !important;
 }
 
-@media only screen and (min-width:1200px) {}
+@media only screen and (max-width:1400px) {
+    .dropdown1::before {
+        right: 314px;
+    }
+}
 
 @media only screen and (max-width:1200px) {
+    .dropdown1::before {
+        right: 225px;
+    }
+
     #contact {
         margin-top: 450px;
     }
@@ -679,24 +694,26 @@ a {
 
     #shoar {
         margin-top: 476px;
-      }
+    }
 
     #shoar .h-172 {
         height: auto;
     }
-    #shoar .h-sm-148{
+
+    #shoar .h-sm-148 {
         height: 148px;
     }
+
     #shoar .-top-36 {
         top: -330px;
-      }
+    }
 }
 
 @media only screen and (max-width:992px) {
     #services .h-486 {
         height: auto;
     }
-    
+
     #about {
         margin-top: 501px;
     }
