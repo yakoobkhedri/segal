@@ -40,6 +40,11 @@ a {
     text-align: justify;
 }
 
+/* object fit */
+.object-cover{
+    object-fit: cover;
+}
+
 /* overflow */
 .overflow-x-hidden {
     overflow-x: hidden;
