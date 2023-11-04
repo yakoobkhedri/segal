@@ -1,12 +1,28 @@
 // dropdown menu
 
-let productMenu=document.getElementById('productMenu')
+let productMenu=document.getElementById('productMenu');
+let dropdown1=Array.from(document.querySelectorAll('.dropdown1 > li'));
+let dropdown2=Array.from(document.querySelectorAll('.dropdown2 > li'));
 
 productMenu.addEventListener('mouseover',function () {
     this.parentElement.nextElementSibling.classList.add('active');
-    this.parentElement.nextElementSibling.nextElementSibling.classList.add('active');
-    this.parentElement.parentElement.style.paddingBottom='3px'
 })
+
+dropdown1.forEach((item) => {
+    item.addEventListener('mouseover', function() {
+        dropdown1.forEach((li)=>li.classList.remove('active'));
+        item.classList.add('active');
+        let tabId = item.dataset.id;
+        dropdown2.forEach((content) => {
+            let contentId = content.dataset.id;
+            if (tabId === contentId) {
+                content.classList.add('active');
+            } else {
+                content.classList.remove('active');
+            }
+        })
+    })
+});
 
 // swiper
 var models = new Swiper(".banner", {

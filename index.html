@@ -20,7 +20,7 @@
   <header class="position-relative z-10">
     <div class="container">
       <div class="d-flex justify-content-between gap-3">
-        <div class="flex-grow-1 w-100">
+        <div class="flex-grow-1 w-100 position-relative">
           <div class="py-33 px-28 rounded-b-26 d-flex align-items-center justify-content-between bg-header1">
             <!-- hamburger icon -->
             <svg class="d-xl-none cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -67,14 +67,15 @@
             </div>
           </div>
           <div
-            class="rounded-b-26 d-flex align-items-center justify-content-between d-xl-block bg-gradient-main position-relative px-4 mx-md-5 mx-4">
+            class="rounded-b-26 d-flex align-items-center justify-content-between d-xl-block bg-gradient-main position-absolute position-sm-static w-92 py-4 py-xl-0 px-3 px-xl-0 mx-md-5 mx-4">
             <!-- svg -->
             <img alt="shape" src="assets/img/bg-header2.png"
               class="position-absolute end-0 start-0 object-cover mx-auto z-0 px-5 top-0 bottom-0 h-100 w-100 d-none d-xl-block">
             <!-- menu -->
             <ul
               class="d-xl-flex menu d-none align-items-center h-65 justify-content-center gap-5 list-unstyled p-0 mb-0 fs-13 z-10 position-relative">
-              <li class="h-100 d-flex align-items-center"><a class="text-white h-100 d-flex align-items-center">صفحه اصلی</a></li>
+              <li class="h-100 d-flex align-items-center"><a class="text-white h-100 d-flex align-items-center">صفحه
+                  اصلی</a></li>
               <li id="productMenu" class="h-100 d-flex align-items-center">
                 <a class="text-white d-flex h-100 align-items-center gap-2">
                   <p class="mb-0">محصولات</p>
@@ -84,478 +85,485 @@
                   </svg>
                 </a>
               </li>
-              <li class="h-100 d-flex align-items-center"> <a class="text-white h-100 d-flex align-items-center">خدمات ما</a></li>
-              <li class="h-100 d-flex align-items-center"> <a class="text-white h-100 d-flex align-items-center">درباره ما</a></li>
-              <li class="h-100 d-flex align-items-center"><a class="text-white h-100 d-flex align-items-center">تماس با ما</a></li>
-              <li class="h-100 d-flex align-items-center"> <a class="text-white h-100 d-flex align-items-center">بلاگ</a></li>
+              <li class="h-100 d-flex align-items-center"> <a class="text-white h-100 d-flex align-items-center">خدمات
+                  ما</a></li>
+              <li class="h-100 d-flex align-items-center"> <a class="text-white h-100 d-flex align-items-center">درباره
+                  ما</a></li>
+              <li class="h-100 d-flex align-items-center"><a class="text-white h-100 d-flex align-items-center">تماس با
+                  ما</a></li>
+              <li class="h-100 d-flex align-items-center"> <a
+                  class="text-white h-100 d-flex align-items-center">بلاگ</a></li>
             </ul>
-            <!-- dropdown 1 -->
-            <ul
-              class="dropdown1 list-unstyled position-relative fs-12 fw-bold z-10 d-none d-xl-flex align-items-center justify-content-between mb-0 px-4 bg-white rounded-18 p-4 end-0 start-0">
-              <li>
-                <a class="text-dark d-flex align-items-center gap-2">
-                  <p class="mb-0">اتوماسیون صنعتی</p>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
-                    class="bi bi-chevron-down" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd"
-                      d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+            <!--  -->
+            <div class="dropdowns d-none d-xl-block py-xl-0 px-4">
+              <!-- dropdown 1 -->
+              <ul
+                class="dropdown1 list-unstyled position-relative fs-12 fw-bold z-10 d-none d-xl-flex align-items-center justify-content-between mb-0 px-4 bg-white rounded-18 p-4 end-0 start-0">
+                <li data-id="1" class="active">
+                  <a class="d-flex text-gray align-items-center gap-2">
+                    <p class="mb-0">اتوماسیون صنعتی</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                      class="bi bi-chevron-down" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd"
+                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                  </a>
+                </li>
+                <li data-id="2">
+                  <a class="text-gray d-flex align-items-center gap-2">
+                    <p class="mb-0">برق صنعتی</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                      class="bi bi-chevron-down" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd"
+                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                  </a>
+                </li>
+                <li data-id="3">
+                  <a class="text-gray d-flex align-items-center gap-2">
+                    <p class="mb-0">سنسور</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                      class="bi bi-chevron-down" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd"
+                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                  </a>
+                </li>
+                <li data-id="4">
+                  <a class="text-gray d-flex align-items-center gap-2">
+                    <p class="mb-0">کنترل و نمایشگر</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                      class="bi bi-chevron-down" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd"
+                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                  </a>
+                </li>
+                <li data-id="5">
+                  <a class="text-gray d-flex align-items-center gap-2">
+                    <p class="mb-0">تابلوبرق و تجهیزات</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                      class="bi bi-chevron-down" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd"
+                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                  </a>
+                </li>
+                <li data-id="6">
+                  <a class="text-gray d-flex align-items-center gap-2">
+                    <p class="mb-0">سیم و کابل</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                      class="bi bi-chevron-down" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd"
+                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                  </a>
+                </li>
+                <li data-id="7">
+                  <a class="text-gray d-flex align-items-center gap-2">
+                    <p class="mb-0">نور و روشنایی</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                      class="bi bi-chevron-down" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd"
+                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                  </a>
+                </li>
+                <li data-id="8">
+                  <a class="text-gray d-flex align-items-center gap-2">
+                    <p class="mb-0">برق خانگی</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                      class="bi bi-chevron-down" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd"
+                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                  </a>
+                </li>
+                <li data-id="9">
+                  <a class="text-gray d-flex align-items-center gap-2">
+                    <p class="mb-0">ابزار و اندازه گیری</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                      class="bi bi-chevron-down" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd"
+                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+              <!-- dropdown 2 -->
+              <ul
+                class="dropdown2 list-unstyled d-none d-xl-block mt-4 position-relative fs-14 fw-bold z-10 mb-0 px-5 bg-white rounded-18 p-4 end-0 start-0">
+                <li data-id="1" class="active flex-wrap align-items-center gap-5 position-relative">
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                    <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
                   </svg>
-                </a>
-              </li>
-              <li>
-                <a class="text-gray d-flex align-items-center gap-2">
-                  <p class="mb-0">برق صنعتی</p>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
-                    class="bi bi-chevron-down" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd"
-                      d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                    <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
                   </svg>
-                </a>
-              </li>
-              <li>
-                <a class="text-gray d-flex align-items-center gap-2">
-                  <p class="mb-0">سنسور</p>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
-                    class="bi bi-chevron-down" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd"
-                      d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                    <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
                   </svg>
-                </a>
-              </li>
-              <li>
-                <a class="text-gray d-flex align-items-center gap-2">
-                  <p class="mb-0">کنترل و نمایشگر</p>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
-                    class="bi bi-chevron-down" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd"
-                      d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                    <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
                   </svg>
-                </a>
-              </li>
-              <li>
-                <a class="text-gray d-flex align-items-center gap-2">
-                  <p class="mb-0">تابلوبرق و تجهیزات</p>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
-                    class="bi bi-chevron-down" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd"
-                      d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                    <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
                   </svg>
-                </a>
-              </li>
-              <li>
-                <a class="text-gray d-flex align-items-center gap-2">
-                  <p class="mb-0">سیم و کابل</p>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
-                    class="bi bi-chevron-down" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd"
-                      d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                </li>
+                <li data-id="2" class="flex-wrap align-items-center gap-5 position-relative">
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">برق صنعتی</p>
+                  </a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                    <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
                   </svg>
-                </a>
-              </li>
-              <li>
-                <a class="text-gray d-flex align-items-center gap-2">
-                  <p class="mb-0">نور و روشنایی</p>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
-                    class="bi bi-chevron-down" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd"
-                      d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                    <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
                   </svg>
-                </a>
-              </li>
-              <li>
-                <a class="text-gray d-flex align-items-center gap-2">
-                  <p class="mb-0">برق خانگی</p>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
-                    class="bi bi-chevron-down" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd"
-                      d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                    <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
                   </svg>
-                </a>
-              </li>
-              <li>
-                <a class="text-gray d-flex align-items-center gap-2">
-                  <p class="mb-0">ابزار و اندازه گیری</p>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
-                    class="bi bi-chevron-down" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd"
-                      d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                    <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
                   </svg>
-                </a>
-              </li>
-            </ul>
-            <!-- dropdown 2 -->
-            <ul
-              class="dropdown2 list-unstyled d-none d-xl-block mt-4 position-relative fs-14 fw-bold z-10 mb-0 px-5 bg-white rounded-18 p-4 end-0 start-0">
-              <li class="d-flex flex-wrap align-items-center gap-5 position-relative">
-                <a class="text-center text-dark">
-                  <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
-                  <p class="mb-0 mt-3">منبع تغذیه</p>
-                </a>
-                <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
-                  <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
-                </svg>
-                <a class="text-center text-dark">
-                  <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
-                  <p class="mb-0 mt-3">منبع تغذیه</p>
-                </a>
-                <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
-                  <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
-                </svg>
-                <a class="text-center text-dark">
-                  <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
-                  <p class="mb-0 mt-3">منبع تغذیه</p>
-                </a>
-                <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
-                  <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
-                </svg>
-                <a class="text-center text-dark">
-                  <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
-                  <p class="mb-0 mt-3">منبع تغذیه</p>
-                </a>
-                <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
-                  <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
-                </svg>
-                <a class="text-center text-dark">
-                  <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
-                  <p class="mb-0 mt-3">منبع تغذیه</p>
-                </a>
-                <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
-                  <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
-                </svg>
-                <a class="text-center text-dark">
-                  <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
-                  <p class="mb-0 mt-3">منبع تغذیه</p>
-                </a>
-              </li>
-              <li class="d-none flex-wrap align-items-center gap-5 position-relative">
-                <a class="text-center text-dark">
-                  <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
-                  <p class="mb-0 mt-3">منبع تغذیه</p>
-                </a>
-                <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
-                  <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
-                </svg>
-                <a class="text-center text-dark">
-                  <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
-                  <p class="mb-0 mt-3">منبع تغذیه</p>
-                </a>
-                <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
-                  <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
-                </svg>
-                <a class="text-center text-dark">
-                  <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
-                  <p class="mb-0 mt-3">منبع تغذیه</p>
-                </a>
-                <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
-                  <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
-                </svg>
-                <a class="text-center text-dark">
-                  <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
-                  <p class="mb-0 mt-3">منبع تغذیه</p>
-                </a>
-                <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
-                  <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
-                </svg>
-                <a class="text-center text-dark">
-                  <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
-                  <p class="mb-0 mt-3">منبع تغذیه</p>
-                </a>
-                <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
-                  <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
-                </svg>
-                <a class="text-center text-dark">
-                  <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
-                  <p class="mb-0 mt-3">منبع تغذیه</p>
-                </a>
-              </li>
-              <li class="d-none flex-wrap align-items-center gap-5 position-relative">
-                <a class="text-center text-dark">
-                  <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
-                  <p class="mb-0 mt-3">منبع تغذیه</p>
-                </a>
-                <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
-                  <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
-                </svg>
-                <a class="text-center text-dark">
-                  <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
-                  <p class="mb-0 mt-3">منبع تغذیه</p>
-                </a>
-                <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
-                  <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
-                </svg>
-                <a class="text-center text-dark">
-                  <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
-                  <p class="mb-0 mt-3">منبع تغذیه</p>
-                </a>
-                <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
-                  <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
-                </svg>
-                <a class="text-center text-dark">
-                  <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
-                  <p class="mb-0 mt-3">منبع تغذیه</p>
-                </a>
-                <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
-                  <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
-                </svg>
-                <a class="text-center text-dark">
-                  <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
-                  <p class="mb-0 mt-3">منبع تغذیه</p>
-                </a>
-                <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
-                  <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
-                </svg>
-                <a class="text-center text-dark">
-                  <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
-                  <p class="mb-0 mt-3">منبع تغذیه</p>
-                </a>
-              </li>
-              <li class="d-none flex-wrap align-items-center gap-5 position-relative">
-                <a class="text-center text-dark">
-                  <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
-                  <p class="mb-0 mt-3">منبع تغذیه</p>
-                </a>
-                <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
-                  <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
-                </svg>
-                <a class="text-center text-dark">
-                  <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
-                  <p class="mb-0 mt-3">منبع تغذیه</p>
-                </a>
-                <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
-                  <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
-                </svg>
-                <a class="text-center text-dark">
-                  <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
-                  <p class="mb-0 mt-3">منبع تغذیه</p>
-                </a>
-                <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
-                  <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
-                </svg>
-                <a class="text-center text-dark">
-                  <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
-                  <p class="mb-0 mt-3">منبع تغذیه</p>
-                </a>
-                <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
-                  <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
-                </svg>
-                <a class="text-center text-dark">
-                  <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
-                  <p class="mb-0 mt-3">منبع تغذیه</p>
-                </a>
-                <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
-                  <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
-                </svg>
-                <a class="text-center text-dark">
-                  <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
-                  <p class="mb-0 mt-3">منبع تغذیه</p>
-                </a>
-              </li>
-              <li class="d-none flex-wrap align-items-center gap-5 position-relative">
-                <a class="text-center text-dark">
-                  <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
-                  <p class="mb-0 mt-3">منبع تغذیه</p>
-                </a>
-                <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
-                  <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
-                </svg>
-                <a class="text-center text-dark">
-                  <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
-                  <p class="mb-0 mt-3">منبع تغذیه</p>
-                </a>
-                <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
-                  <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
-                </svg>
-                <a class="text-center text-dark">
-                  <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
-                  <p class="mb-0 mt-3">منبع تغذیه</p>
-                </a>
-                <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
-                  <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
-                </svg>
-                <a class="text-center text-dark">
-                  <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
-                  <p class="mb-0 mt-3">منبع تغذیه</p>
-                </a>
-                <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
-                  <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
-                </svg>
-                <a class="text-center text-dark">
-                  <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
-                  <p class="mb-0 mt-3">منبع تغذیه</p>
-                </a>
-                <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
-                  <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
-                </svg>
-                <a class="text-center text-dark">
-                  <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
-                  <p class="mb-0 mt-3">منبع تغذیه</p>
-                </a>
-              </li>
-              <li class="d-none flex-wrap align-items-center gap-5 position-relative">
-                <a class="text-center text-dark">
-                  <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
-                  <p class="mb-0 mt-3">منبع تغذیه</p>
-                </a>
-                <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
-                  <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
-                </svg>
-                <a class="text-center text-dark">
-                  <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
-                  <p class="mb-0 mt-3">منبع تغذیه</p>
-                </a>
-                <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
-                  <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
-                </svg>
-                <a class="text-center text-dark">
-                  <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
-                  <p class="mb-0 mt-3">منبع تغذیه</p>
-                </a>
-                <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
-                  <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
-                </svg>
-                <a class="text-center text-dark">
-                  <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
-                  <p class="mb-0 mt-3">منبع تغذیه</p>
-                </a>
-                <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
-                  <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
-                </svg>
-                <a class="text-center text-dark">
-                  <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
-                  <p class="mb-0 mt-3">منبع تغذیه</p>
-                </a>
-                <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
-                  <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
-                </svg>
-                <a class="text-center text-dark">
-                  <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
-                  <p class="mb-0 mt-3">منبع تغذیه</p>
-                </a>
-              </li>
-              <li class="d-none flex-wrap align-items-center gap-5 position-relative">
-                <a class="text-center text-dark">
-                  <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
-                  <p class="mb-0 mt-3">منبع تغذیه</p>
-                </a>
-                <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
-                  <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
-                </svg>
-                <a class="text-center text-dark">
-                  <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
-                  <p class="mb-0 mt-3">منبع تغذیه</p>
-                </a>
-                <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
-                  <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
-                </svg>
-                <a class="text-center text-dark">
-                  <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
-                  <p class="mb-0 mt-3">منبع تغذیه</p>
-                </a>
-                <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
-                  <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
-                </svg>
-                <a class="text-center text-dark">
-                  <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
-                  <p class="mb-0 mt-3">منبع تغذیه</p>
-                </a>
-                <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
-                  <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
-                </svg>
-                <a class="text-center text-dark">
-                  <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
-                  <p class="mb-0 mt-3">منبع تغذیه</p>
-                </a>
-                <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
-                  <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
-                </svg>
-                <a class="text-center text-dark">
-                  <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
-                  <p class="mb-0 mt-3">منبع تغذیه</p>
-                </a>
-              </li>
-              <li class="d-none flex-wrap align-items-center gap-5 position-relative">
-                <a class="text-center text-dark">
-                  <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
-                  <p class="mb-0 mt-3">منبع تغذیه</p>
-                </a>
-                <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
-                  <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
-                </svg>
-                <a class="text-center text-dark">
-                  <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
-                  <p class="mb-0 mt-3">منبع تغذیه</p>
-                </a>
-                <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
-                  <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
-                </svg>
-                <a class="text-center text-dark">
-                  <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
-                  <p class="mb-0 mt-3">منبع تغذیه</p>
-                </a>
-                <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
-                  <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
-                </svg>
-                <a class="text-center text-dark">
-                  <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
-                  <p class="mb-0 mt-3">منبع تغذیه</p>
-                </a>
-                <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
-                  <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
-                </svg>
-                <a class="text-center text-dark">
-                  <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
-                  <p class="mb-0 mt-3">منبع تغذیه</p>
-                </a>
-                <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
-                  <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
-                </svg>
-                <a class="text-center text-dark">
-                  <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
-                  <p class="mb-0 mt-3">منبع تغذیه</p>
-                </a>
-              </li>
-              <li class="d-none flex-wrap align-items-center gap-5 position-relative">
-                <a class="text-center text-dark">
-                  <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
-                  <p class="mb-0 mt-3">منبع تغذیه</p>
-                </a>
-                <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
-                  <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
-                </svg>
-                <a class="text-center text-dark">
-                  <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
-                  <p class="mb-0 mt-3">منبع تغذیه</p>
-                </a>
-                <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
-                  <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
-                </svg>
-                <a class="text-center text-dark">
-                  <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
-                  <p class="mb-0 mt-3">منبع تغذیه</p>
-                </a>
-                <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
-                  <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
-                </svg>
-                <a class="text-center text-dark">
-                  <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
-                  <p class="mb-0 mt-3">منبع تغذیه</p>
-                </a>
-                <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
-                  <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
-                </svg>
-                <a class="text-center text-dark">
-                  <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
-                  <p class="mb-0 mt-3">منبع تغذیه</p>
-                </a>
-                <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
-                  <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
-                </svg>
-                <a class="text-center text-dark">
-                  <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
-                  <p class="mb-0 mt-3">منبع تغذیه</p>
-                </a>
-              </li>
-            </ul>
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                    <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
+                  </svg>
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                </li>
+                <li data-id="3" class="flex-wrap align-items-center gap-5 position-relative">
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                    <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
+                  </svg>
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                    <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
+                  </svg>
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                    <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
+                  </svg>
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                    <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
+                  </svg>
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                    <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
+                  </svg>
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                </li>
+                <li data-id="4" class="flex-wrap align-items-center gap-5 position-relative">
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                    <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
+                  </svg>
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                    <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
+                  </svg>
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                    <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
+                  </svg>
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                    <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
+                  </svg>
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                    <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
+                  </svg>
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                </li>
+                <li data-id="5" class="flex-wrap align-items-center gap-5 position-relative">
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                    <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
+                  </svg>
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                    <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
+                  </svg>
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                    <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
+                  </svg>
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                    <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
+                  </svg>
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                    <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
+                  </svg>
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                </li>
+                <li data-id="6" class="flex-wrap align-items-center gap-5 position-relative">
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                    <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
+                  </svg>
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                    <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
+                  </svg>
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                    <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
+                  </svg>
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                    <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
+                  </svg>
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                    <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
+                  </svg>
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                </li>
+                <li data-id="7" class="flex-wrap align-items-center gap-5 position-relative">
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                    <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
+                  </svg>
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                    <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
+                  </svg>
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                    <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
+                  </svg>
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                    <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
+                  </svg>
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                    <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
+                  </svg>
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                </li>
+                <li data-id="8" class="flex-wrap align-items-center gap-5 position-relative">
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                    <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
+                  </svg>
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                    <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
+                  </svg>
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                    <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
+                  </svg>
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                    <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
+                  </svg>
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                    <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
+                  </svg>
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                </li>
+                <li data-id="9" class="flex-wrap align-items-center gap-5 position-relative">
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                    <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
+                  </svg>
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                    <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
+                  </svg>
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                    <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
+                  </svg>
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                    <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
+                  </svg>
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                    <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
+                  </svg>
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
             <!-- cart icon && phone number (mobile size) -->
             <a class="d-xl-none">
               <p class="text-white fs-15 mb-0 font-bold"><span class="fw-bold">0912</span>۱۲۳۴۵۶۷۸۹</p>
