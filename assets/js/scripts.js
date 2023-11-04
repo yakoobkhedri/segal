@@ -1,6 +1,7 @@
 // dropdown menu
 
 let productMenu=document.getElementById('productMenu');
+let dropdowns=document.querySelector('.dropdowns');
 let dropdown1=Array.from(document.querySelectorAll('.dropdown1 > li'));
 let dropdown2=Array.from(document.querySelectorAll('.dropdown2 > li'));
 
@@ -23,6 +24,9 @@ dropdown1.forEach((item) => {
         })
     })
 });
+dropdowns.addEventListener('mouseleave',function () {
+    dropdowns.classList.remove('active');
+})
 
 // swiper
 var models = new Swiper(".banner", {

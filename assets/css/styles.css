@@ -41,7 +41,7 @@ a {
 }
 
 /* object fit */
-.object-cover{
+.object-cover {
     object-fit: cover;
 }
 
@@ -133,7 +133,7 @@ a {
 }
 
 /* padding */
-.pb-26{
+.pb-26 {
     padding-bottom: 26px;
 }
 
@@ -242,6 +242,10 @@ a {
 /* right */
 .-right-40 {
     right: -40px;
+}
+
+.-right-1{
+    right: -1px;
 }
 
 .right-159 {
@@ -613,69 +617,85 @@ a {
     background-position: center;
 }
 
-.dropdown1 > li:hover a,.dropdown1 > li.active a{
-    color: black!important;
+.dropdown1>li a {
+    transition: all .4s;
 }
-.dropdown2 >li{
+
+.dropdown1>li:hover a,
+.dropdown1>li.active a {
+    color: black !important;
+}
+
+.dropdown2>li {
     display: none;
 }
-.dropdown2 >li.active{
+
+.dropdown2>li.active {
     display: flex;
 }
-.dropdowns{
+
+.dropdowns {
     max-height: 0;
-    padding-top: 0!important;
-    padding-bottom: 0!important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
     overflow: hidden;
-    margin-top: 0!important;
-    margin-bottom: 0!important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
     transition: all .5s;
 }
 
-.dropdowns.active{
+.dropdowns.active {
     max-height: 2000px;
-    margin-bottom: 26px!important;
+    margin-bottom: 26px !important;
     overflow: visible;
 }
 
 .dropdown1::before {
     right: 403px;
-    top: -6px!important;
+    top: -6px !important;
 }
 
-.dropdown2 >li:first-child::before{
+.dropdown2>li:first-child::before {
     right: 9px;
     top: -31px !important;
 }
-.dropdown2 >li:nth-child(2):before{
+
+.dropdown2>li:nth-child(2):before {
     right: 130px;
     top: -31px !important;
 }
-.dropdown2 >li:nth-child(3):before{
+
+.dropdown2>li:nth-child(3):before {
     right: 224px;
     top: -31px !important;
 }
-.dropdown2 >li:nth-child(4):before{
+
+.dropdown2>li:nth-child(4):before {
     right: 323px;
     top: -31px !important;
 }
-.dropdown2 >li:nth-child(5):before{
+
+.dropdown2>li:nth-child(5):before {
     right: 465px;
     top: -31px !important;
 }
-.dropdown2 >li:nth-child(6):before{
+
+.dropdown2>li:nth-child(6):before {
     right: 587px;
     top: -31px !important;
 }
-.dropdown2 >li:nth-child(7):before{
+
+.dropdown2>li:nth-child(7):before {
     right: 687px;
     top: -31px !important;
 }
-.dropdown2 >li:nth-child(8):before{
+
+.dropdown2>li:nth-child(8):before {
     right: 798px;
     top: -31px !important;
 }
-.dropdown2 >li:nth-child(9):before{
+
+.dropdown2>li:nth-child(9):before {
     right: 893px;
     top: -31px !important;
 }
@@ -691,15 +711,15 @@ a {
 /* contact icons */
 .contact-hover::after,
 .dropdown1::before,
-.dropdown2 >li:first-child::before,
-.dropdown2 >li:nth-child(2):before,
-.dropdown2 >li:nth-child(3):before,
-.dropdown2 >li:nth-child(4):before,
-.dropdown2 >li:nth-child(5):before,
-.dropdown2 >li:nth-child(6):before,
-.dropdown2 >li:nth-child(7):before,
-.dropdown2 >li:nth-child(8):before,
-.dropdown2 >li:nth-child(9):before {
+.dropdown2>li:first-child::before,
+.dropdown2>li:nth-child(2):before,
+.dropdown2>li:nth-child(3):before,
+.dropdown2>li:nth-child(4):before,
+.dropdown2>li:nth-child(5):before,
+.dropdown2>li:nth-child(6):before,
+.dropdown2>li:nth-child(7):before,
+.dropdown2>li:nth-child(8):before,
+.dropdown2>li:nth-child(9):before {
     content: '';
     position: absolute;
     background-color: #ffffff;
@@ -728,20 +748,68 @@ a {
     .dropdown1::before {
         right: 314px;
     }
+
+    .dropdown2>li:nth-child(2)::before {
+        right: 110px;
+    }
+
+    .dropdown2>li:nth-child(3)::before {
+        right: 179px;
+    }
+
+    .dropdown2>li:nth-child(4)::before {
+        right: 261px;
+    }
+
+    .dropdown2>li:nth-child(5)::before {
+        right: 378px;
+    }
+
+    .dropdown2>li:nth-child(6)::before {
+        right: 478px;
+    }
+
+    .dropdown2>li:nth-child(7)::before {
+        right: 558px;
+    }
+
+    .dropdown2>li:nth-child(8)::before {
+        right: 642px;
+    }
+
+    .dropdown2>li:nth-child(9)::before {
+        right: 732px;
+    }
 }
 
 @media only screen and (max-width:1200px) {
 
-    header .position-sm-static{
-        position: static!important;
+    header .position-sm-static {
+        position: static !important;
     }
-    
+
     header .w-92 {
         width: auto;
-      }
+    }
 
     .dropdown1::before {
         right: 225px;
+    }
+
+    #mobileMenu {
+        border: 1px solid #00000026;
+        padding: 21px;
+        top: 137px;
+        background: #ffffffb0;
+        backdrop-filter: blur(26px);
+    }
+    .accordionContent{
+        transition: all .4s;
+        max-height: 0;
+        overflow: hidden;
+    }
+    .accordionContent.active{
+       max-height: 2000px;
     }
 
     #contact {
