@@ -4,7 +4,20 @@ let productMenu=document.getElementById('productMenu');
 let dropdowns=document.querySelector('.dropdowns');
 let dropdown1=Array.from(document.querySelectorAll('.dropdown1 > li'));
 let dropdown2=Array.from(document.querySelectorAll('.dropdown2 > li'));
+let accordionBtn=Array.from(document.getElementsByClassName('accordionBtn'));
+let hamIcon=document.getElementById('hamIcon');
+let mobileMenu=document.getElementById('mobileMenu');
 
+hamIcon.addEventListener('click',function () {
+    mobileMenu.classList.toggle('active');
+})
+
+accordionBtn.forEach((item)=>{
+    item.addEventListener('click',function () {
+      item.nextElementSibling.classList.toggle('active');
+      item.querySelector('.bi-chevron-up').classList.toggle('active');
+    })
+})
 productMenu.addEventListener('mouseover',function () {
     this.parentElement.nextElementSibling.classList.add('active');
 })

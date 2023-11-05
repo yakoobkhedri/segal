@@ -171,6 +171,11 @@ a {
     color: #8e95a3;
 }
 
+/* border */
+.border-dash-r-2{
+    border-right: 2px dashed lightgray;;
+}
+
 /* box shadow */
 .shadow1 {
     box-shadow: 0px 0px 26.399999618530273px 0px #00000040;
@@ -242,6 +247,10 @@ a {
 /* right */
 .-right-40 {
     right: -40px;
+}
+
+.-right-8{
+    right: -8px;
 }
 
 .-right-1{
@@ -799,13 +808,43 @@ a {
     .dropdown1::before {
         right: 225px;
     }
-
+    #mobileMenu::before {
+        content: '';
+        position: absolute;
+        background: #f9f9f9;
+        content: "";
+        width: 25px;
+        height: 25px;
+        right: 50px;
+        top: -10px;
+        border-radius: 5px;
+        position: absolute;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+        -o-transition: all 0.2s ease 0s;
+        transition: all 0.2s ease 0s;
+        -webkit-transition: all 0.2s ease 0s;
+        -moz-transition: all 0.2s ease 0s;
+    }
     #mobileMenu {
         border: 1px solid #00000026;
-        padding: 21px;
+        padding: 21px 0;
         top: 137px;
-        background: #ffffffb0;
+        background: #fffffff2;
         backdrop-filter: blur(26px);
+        z-index: 29;
+        display: none;
+    }
+    #mobileMenu.active{
+        display: block!important;
+    }
+    .accordionBtn .bi-chevron-up{
+        transition: all .4s;
+    }
+    .accordionBtn .bi-chevron-up.active{
+        transform: rotate(180deg);
     }
     .accordionContent{
         transition: all .4s;
@@ -881,8 +920,8 @@ a {
     }
 
     header .px-28 {
-        padding-left: 46px;
-        padding-right: 46px;
+        padding-left: 30px;
+        padding-right: 30px;
     }
 
     #services .h-486 {
@@ -931,6 +970,10 @@ a {
 }
 
 @media only screen and (max-width:768px) {
+
+    #mobileMenu::before {
+        right: 33px;
+    }
 
     .swiper-pagination-bullet-active,
     .swiper-pagination3.swiper-pagination-bullet-active {
