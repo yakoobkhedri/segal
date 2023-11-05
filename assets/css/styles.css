@@ -305,6 +305,11 @@ a {
     background: #FFFFFF24;
 }
 
+.bg-blur{
+    background: #ffffffbd;
+    backdrop-filter: blur(11px);
+}
+
 /* font size */
 .fs-10 {
     font-size: 10px;
@@ -443,10 +448,6 @@ a {
 
 .h-97 {
     height: 97px;
-}
-
-.h-145 {
-    height: 145px;
 }
 
 .h-158 {
