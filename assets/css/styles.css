@@ -115,6 +115,10 @@ a {
     border-radius: 33px 33px 0 0;
 }
 
+.rounded-t-42 {
+    border-radius: 42px 42px 0 0;
+}
+
 /* z index */
 .-z-1 {
     z-index: -1;
@@ -172,8 +176,9 @@ a {
 }
 
 /* border */
-.border-dash-r-2{
-    border-right: 2px dashed lightgray;;
+.border-dash-r-2 {
+    border-right: 2px dashed lightgray;
+    ;
 }
 
 /* box shadow */
@@ -219,6 +224,10 @@ a {
     top: 34px;
 }
 
+.-top-30 {
+    top: -30px;
+}
+
 /* bottom */
 .-bottom-210 {
     bottom: -210px;
@@ -249,11 +258,11 @@ a {
     right: -40px;
 }
 
-.-right-8{
+.-right-8 {
     right: -8px;
 }
 
-.-right-1{
+.-right-1 {
     right: -1px;
 }
 
@@ -281,6 +290,11 @@ a {
     background: linear-gradient(74.18deg, #5B6CCC 2.59%, #4834AC 100%);
 }
 
+.bg-gradient-main2 {
+    background: linear-gradient(74.18deg, #5B6CCC 2.59%, #4834AC 100%),
+        linear-gradient(0deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.08));
+}
+
 .bg-main2 {
     background-color: #ABB0E3;
 }
@@ -305,7 +319,7 @@ a {
     background: #FFFFFF24;
 }
 
-.bg-blur{
+.bg-blur {
     background: #ffffffbd;
     backdrop-filter: blur(11px);
 }
@@ -370,6 +384,10 @@ a {
 
 .w-64 {
     width: 64px;
+}
+
+.w-76 {
+    width: 76px;
 }
 
 .w-92 {
@@ -444,6 +462,10 @@ a {
 
 .h-68 {
     height: 68px;
+}
+
+.h-76 {
+    height: 76px;
 }
 
 .h-97 {
@@ -813,6 +835,7 @@ a {
     .dropdown1::before {
         right: 225px;
     }
+
     #mobileMenu::before {
         content: '';
         position: absolute;
@@ -833,6 +856,7 @@ a {
         -webkit-transition: all 0.2s ease 0s;
         -moz-transition: all 0.2s ease 0s;
     }
+
     #mobileMenu {
         border: 1px solid #00000026;
         padding: 21px 0;
@@ -842,22 +866,27 @@ a {
         z-index: 29;
         display: none;
     }
-    #mobileMenu.active{
-        display: block!important;
+
+    #mobileMenu.active {
+        display: block !important;
     }
-    .accordionBtn .bi-chevron-up{
+
+    .accordionBtn .bi-chevron-up {
         transition: all .4s;
     }
-    .accordionBtn .bi-chevron-up.active{
+
+    .accordionBtn .bi-chevron-up.active {
         transform: rotate(180deg);
     }
-    .accordionContent{
+
+    .accordionContent {
         transition: all .4s;
         max-height: 0;
         overflow: hidden;
     }
-    .accordionContent.active{
-       max-height: 2000px;
+
+    .accordionContent.active {
+        max-height: 2000px;
     }
 
     #contact {
@@ -927,6 +956,14 @@ a {
     header .px-28 {
         padding-left: 30px;
         padding-right: 30px;
+    }
+
+    .footerMobileMenu::before {
+        content: url('../img/footermobile.png');
+        position: absolute;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
     }
 
     #services .h-486 {
