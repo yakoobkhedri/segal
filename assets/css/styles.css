@@ -245,6 +245,10 @@ a {
     bottom: -39px;
 }
 
+.-bottom-23{
+    bottom: -23px;
+}
+
 .bottom-8 {
     bottom: -8px;
 }
@@ -898,7 +902,7 @@ a {
     }
 
     #contact .w-md-100 {
-        width: 100%;
+        width: 98%;
     }
 
     #contact .h-md-143 {
