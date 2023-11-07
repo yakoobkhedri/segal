@@ -44,6 +44,7 @@ dropdowns.addEventListener('mouseleave',function () {
 // swiper
 var models = new Swiper(".banner", {
     loop: true,
+    autoplay:true,
     slidesPerView: 1,
     spaceBetween: 0,
     pagination: {
@@ -53,6 +54,7 @@ var models = new Swiper(".banner", {
 var category = new Swiper(".category", {
     slidesPerView: 2.3,
     spaceBetween: 20,
+    autoplay:true,
     breakpoints:{
      768:{
         slidesPerView: 3,
@@ -76,6 +78,7 @@ var category = new Swiper(".category", {
 var services = new Swiper(".services", {
     slidesPerView: 1,
     spaceBetween: 27,
+    autoplay:true,
     breakpoints:{
      768:{
         slidesPerView: 2,
@@ -94,6 +97,7 @@ var services = new Swiper(".services", {
 });
 var customer = new Swiper(".customer", {
     loop:true,
+    autoplay:true,
     slidesPerView: 1.2,
     spaceBetween: 19,
     breakpoints:{

@@ -12,6 +12,19 @@
 
 <body>
 
+  <!-- contact Modal -->
+<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content rounded-27">
+        <button type="button" class="btn-close btn-sm position-absolute top-0 start-0 m-4 z-10" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="modal-body d-flex align-items-center gap-3">
+        <img alt="contactImg" src="assets/img/contactmodal.png" class="img-fluid transform1">
+      </div>
+    </div>
+  </div>
+</div>
+
+
   <!-- shape -->
   <img alt="shape" src="assets/img/shape1.png" class="img-fluid position-absolute start-0 top-0 z-0">
 
@@ -1838,8 +1851,8 @@
 
     <!-- contact icons -->
     <section class="d-none d-md-block">
-      <div class="position-fixed d-flex flex-column gap-2 bottom-130 z-20 left-100">
-        <a class="position-relative phoneIcon">
+      <div class="position-fixed d-flex flex-column gap-2 bottom-34 z-20 left-34">
+        <a class="position-relative phoneIcon" data-bs-toggle="modal" data-bs-target="#contactModal">
           <span
             class="fw-bold position-absolute w-130 h-52 bg-white text-center d-none align-items-center justify-content-center text-dark start-0 -top-69 shadow2 rounded-12 contact-hover">تماس
             با ما</span>
@@ -2176,6 +2189,11 @@
     </div>
     <!-- footer mobile menu -->
     <div class="position-fixed footerMobileMenu shadow4 text-center bg-blur fs-12 fw-bold py-2 -bottom-23 end-0 start-0 rounded-t-42 w-100 z-20 d-lg-none">
+      <!-- wave -->
+       <svg class="position-absolute -top-33 end-0 left-14 mx-auto" xmlns="http://www.w3.org/2000/svg" width="151" height="33" viewBox="0 0 151 33" fill="none">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M150.562 33.0001C144.333 33.0001 138.247 31.1229 133.099 27.6131L108.622 10.9241C88.3809 -2.87653 61.7178 -2.73322 41.6265 11.284L18.4922 27.424C13.2896 31.0538 7.09863 33.0001 0.754883 33.0001H150.562Z" fill="#D9D9D9"/>
+        </svg>
+      <!--  -->
       <div class="d-flex align-items-center justify-content-between container h-100">
         <a class="text-gray">
            <img alt="icon" src="assets/img/serviceicon.png" class="img-fluid mx-auto d-block">
