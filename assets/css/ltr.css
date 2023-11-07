@@ -144,7 +144,7 @@ html {
     transform: rotate(-90deg)translateY(-29px);
 }
 
-#about img[alt='shape']{
+#about img[alt='shape'],.loginContent img[alt='shape']{
     left: auto !important;
   transform: rotateY(180deg);
 }

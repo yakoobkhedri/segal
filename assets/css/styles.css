@@ -1121,6 +1121,10 @@ a {
         width: 100%;
     }
 
+    .loginContent {
+       height: auto;
+    }
+
     footer {
         margin-bottom: 193px !important;
     }
