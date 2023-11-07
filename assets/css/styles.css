@@ -601,7 +601,7 @@ a {
 
 /* transform */
 .transform1{
-    transform: scale(1.16) translateY(-5px) translateX(-9px);
+    transform: scale(1.16) translateY(4px) translateX(-9px);
 }
 
 .-rotate-6 {
