@@ -1018,7 +1018,7 @@ a {
     #shoar .-top-36 {
         top: -330px;
     }
-    footer svg path{
+    footer .footerMobileMenu svg path{
         fill: #ffffffbd;
     }
 }
