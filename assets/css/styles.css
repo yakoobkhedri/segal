@@ -75,6 +75,10 @@ a {
     border-radius: 18px;
 }
 
+.rounded-t-20 {
+    border-radius: 20px 20px 0 0;
+}
+
 .rounded-20 {
     border-radius: 20px;
 }
@@ -175,6 +179,10 @@ a {
     color: #27817A;
 }
 
+.text-second{
+    color: #4834AC;
+}
+
 .text-gray {
     color: #8e95a3;
 }
@@ -243,6 +251,14 @@ a {
 
 .-top-30 {
     top: -30px;
+}
+
+.-top-27 {
+    top: -27px;
+}
+
+.-top-16 {
+    top: -16px;
 }
 
 /* bottom */
@@ -409,6 +425,10 @@ a {
     font-size: 22px;
 }
 
+.fs-24 {
+    font-size: 24px;
+}
+
 /* max width */
 .max-w-507 {
     max-width: 507px;
@@ -484,6 +504,10 @@ a {
     width: 326px;
 }
 
+.w-362 {
+    width: 362px;
+}
+
 .w-417 {
     width: 417px;
 }
@@ -500,6 +524,10 @@ a {
 
 .h-15 {
     height: 15px;
+}
+
+.h-16 {
+    height: 16px;
 }
 
 .h-22 {
@@ -586,6 +614,10 @@ a {
 /* margin top */
 .mt-112 {
     margin-top: 112px;
+}
+
+.mt-167 {
+    margin-top: 167px;
 }
 
 .mt-204 {
@@ -1082,6 +1114,10 @@ a {
     }
 
     #contact .w-sm-100 {
+        width: 100%;
+    }
+
+    .checkout.w-362{
         width: 100%;
     }
 
