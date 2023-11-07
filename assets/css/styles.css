@@ -279,6 +279,9 @@ a {
 }
 
 /* right */
+.right-0{
+    right: 0;
+}
 .-right-40 {
     right: -40px;
 }
@@ -300,6 +303,10 @@ a {
 }
 
 /* left */
+.left-0{
+    left: 0;
+}
+
 .left-14{
     left: 14px;
 }
@@ -683,7 +690,7 @@ a {
     position: absolute;
     left: auto;
     right: -319px;
-    top: 328px;
+    top: 319px;
     transform: rotate(180deg);
     z-index: 10;
 }
