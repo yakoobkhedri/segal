@@ -172,7 +172,9 @@ html {
 .servicesShape,
 #services .seeAll svg,
 .serviceMobileSize img[alt='shape'],
-.serviceMobileSize img[alt='shape2']
+.serviceMobileSize img[alt='shape2'],
+#profile .arrow,
+.title-line
 {
     transform: rotateY(180deg);
 }
