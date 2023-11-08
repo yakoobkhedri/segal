@@ -1202,9 +1202,12 @@ a {
         width: 100%;
     }
 
-    .checkout.w-362{
+    .checkout.w-362,#profile .w-362{
         width: 100%;
     }
+    .w-362 .-mt-12 {
+        margin-top: 10px;
+      }
 
     .loginContent {
        height: auto;
@@ -1267,12 +1270,19 @@ a {
     .customer p.text-secondary {
         font-size: 12px;
     }
+
+    .w-362 .-mt-12 {
+        margin-top: -14px;
+      }
 }
 
 @media only screen and (max-width:576px) {
     #about .-top-77 {
         top: -296px;
     }
+    .w-362 .-mt-12 {
+        margin-top: -31px;
+      }
 }
 
 @media only screen and (max-width:400px) {}
