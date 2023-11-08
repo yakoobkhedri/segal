@@ -1136,6 +1136,12 @@ a {
     #shoar .-top-36 {
         top: -330px;
     }
+    .w-362 .-mt-12 {
+        margin-top: -36px;
+      }
+      .w-362 .-top-33 {
+        top: -15.5px;
+      }
     footer .footerMobileMenu svg path{
         fill: #ffffffbd;
     }
