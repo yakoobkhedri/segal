@@ -1007,6 +1007,10 @@ a {
     .dropdown2>li:nth-child(9)::before {
         right: 732px;
     }
+
+    .w-362 .-mt-12 {
+        margin-top: -23px;
+      }
 }
 
 @media only screen and (max-width:1200px) {
