@@ -7,6 +7,7 @@ let dropdown2=Array.from(document.querySelectorAll('.dropdown2 > li'));
 let accordionBtn=Array.from(document.getElementsByClassName('accordionBtn'));
 let hamIcon=document.getElementById('hamIcon');
 let mobileMenu=document.getElementById('mobileMenu');
+let languageLi=document.querySelector('.nav-item.dropdown');
 
 hamIcon.addEventListener('click',function () {
     mobileMenu.classList.toggle('active');
@@ -39,6 +40,9 @@ dropdown1.forEach((item) => {
 });
 dropdowns.addEventListener('mouseleave',function () {
     dropdowns.classList.remove('active');
+})
+languageLi.addEventListener('mouseover', function() {
+  document.querySelector('.dropdowns').classList.remove('active');
 })
 
 // swiper

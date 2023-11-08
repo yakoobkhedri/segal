@@ -183,6 +183,10 @@ a {
     color: #4834AC;
 }
 
+.text-second2{
+    color: #1E2D48;
+}
+
 .text-gray {
     color: #8e95a3;
 }
@@ -190,7 +194,6 @@ a {
 /* border */
 .border-dash-r-2 {
     border-right: 2px dashed lightgray;
-    ;
 }
 
 /* box shadow */
@@ -448,6 +451,10 @@ a {
     width: 30px;
 }
 
+.w-34 {
+    width: 34px;
+}
+
 .w-36 {
     width: 36px;
 }
@@ -536,6 +543,10 @@ a {
 
 .h-30 {
     height: 30px;
+}
+
+.h-34 {
+    height: 34px;
 }
 
 .h-49 {
@@ -640,7 +651,7 @@ a {
 
 /* transform */
 .transform1{
-    transform: scale(1.16) translateY(4px) translateX(-9px);
+    transform: scale(1.16) translateY(4px) translateX(22px);
 }
 
 .-rotate-6 {
@@ -797,7 +808,7 @@ a {
 }
 
 .dropdown1::before {
-    right: 403px;
+    right: 326px;
     top: -6px !important;
 }
 
@@ -846,6 +857,25 @@ a {
     top: -31px !important;
 }
 
+.dropdown-toggle::after {
+    content: url('../img/Vector.svg');
+    border-top: 0;
+}
+
+.dropdown-menu{
+    inset: 6px -30px auto 0px!important;
+}
+
+.dropdown-menu::before{
+    left: 111px!important;
+  top: -7px!important;
+  z-index: -1;
+}
+
+.dropdown-item:active{
+    background-color: transparent;
+}
+
 /* banner */
 #banner {
     background-image: url('../img/swiper-shape.png');
@@ -865,7 +895,8 @@ a {
 .dropdown2>li:nth-child(6):before,
 .dropdown2>li:nth-child(7):before,
 .dropdown2>li:nth-child(8):before,
-.dropdown2>li:nth-child(9):before {
+.dropdown2>li:nth-child(9):before,
+.dropdown-menu::before {
     content: '';
     position: absolute;
     background-color: #ffffff;
@@ -898,7 +929,7 @@ a {
 
 @media only screen and (max-width:1400px) {
     .dropdown1::before {
-        right: 314px;
+        right: 246px;
     }
 
     .dropdown2>li:nth-child(2)::before {
