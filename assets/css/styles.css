@@ -413,6 +413,10 @@ a {
     font-size: 10px;
 }
 
+.fs-11 {
+    font-size: 11px;
+}
+
 .fs-12 {
     font-size: 12px;
 }
@@ -515,13 +519,16 @@ a {
 .w-212 {
     width: 212px;
 }
-
 .w-232 {
     width: 232px;
 }
 
 .w-260 {
     width: 260px;
+}
+
+.w-269 {
+    width: 269px;
 }
 
 .w-285 {
@@ -549,6 +556,10 @@ a {
 }
 
 /* height */
+
+.h-8 {
+    height: 8px;
+}
 
 .h-11 {
     height: 11px;
