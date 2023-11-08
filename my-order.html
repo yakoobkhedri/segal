@@ -1,0 +1,1122 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+  <link rel='stylesheet' type='text/css' media='screen' href='assets/css/styles.css'>
+  <!-- <link rel="stylesheet" href="assets/css/ltr.css"> -->
+  <title>سفارش های من</title>
+</head>
+
+<body>
+
+
+  <!-- shape -->
+  <img alt="shape" src="assets/img/shape1.png" class="img-fluid position-absolute start-0 top-0 -z-1">
+
+  <!-- header -->
+
+  <header class="position-relative z-10">
+    <div class="container">
+      <div class="d-flex justify-content-between gap-3">
+        <div class="flex-grow-1 w-100 position-relative">
+          <div class="py-33 px-28 rounded-b-26 d-flex align-items-center justify-content-between bg-header1">
+            <!-- hamburger icon -->
+            <svg id="hamIcon" class="d-xl-none cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              viewBox="0 0 24 24" fill="none">
+              <path
+                d="M22 18.005C22 18.555 21.554 19 21.005 19H12.995C12.7311 19 12.478 18.8952 12.2914 18.7086C12.1048 18.522 12 18.2689 12 18.005C12 17.7411 12.1048 17.488 12.2914 17.3014C12.478 17.1148 12.7311 17.01 12.995 17.01H21.005C21.555 17.01 22 17.455 22 18.005ZM22 12C22 12.55 21.554 12.995 21.005 12.995H2.995C2.73111 12.995 2.47803 12.8902 2.29143 12.7036C2.10483 12.517 2 12.2639 2 12C2 11.7361 2.10483 11.483 2.29143 11.2964C2.47803 11.1098 2.73111 11.005 2.995 11.005H21.005C21.555 11.005 22 11.451 22 12ZM21.005 6.99C21.2689 6.99 21.522 6.88517 21.7086 6.69857C21.8952 6.51197 22 6.25889 22 5.995C22 5.73111 21.8952 5.47803 21.7086 5.29143C21.522 5.10483 21.2689 5 21.005 5H8.995C8.86433 5 8.73495 5.02574 8.61423 5.07574C8.49351 5.12574 8.38382 5.19903 8.29143 5.29143C8.19903 5.38382 8.12574 5.49351 8.07574 5.61423C8.02574 5.73495 8 5.86433 8 5.995C8 6.12567 8.02574 6.25505 8.07574 6.37577C8.12574 6.49649 8.19903 6.60618 8.29143 6.69857C8.38382 6.79097 8.49351 6.86426 8.61423 6.91426C8.73495 6.96426 8.86433 6.99 8.995 6.99H21.005Z"
+                fill="#1E2D48" />
+            </svg>
+            <!-- logo -->
+            <a href="index.html"><img alt="logo" src="assets/img/logo.png" class="img-fluid"></a>
+            <!-- search products && login -->
+            <div class="d-flex align-items-center gap-3">
+              <form
+                class="d-xl-flex d-none align-items-center gap-2 py-13 px-19 rounded-pill bg-white w-452 flex-shrink-0">
+                <svg class="cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                  viewBox="0 0 20 20" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M9.58329 2.2915C8.62574 2.2915 7.67756 2.48011 6.79289 2.84655C5.90823 3.21299 5.1044 3.75009 4.42731 4.42718C3.75021 5.10428 3.21311 5.90811 2.84667 6.79277C2.48023 7.67744 2.29163 8.62562 2.29163 9.58317C2.29163 10.5407 2.48023 11.4889 2.84667 12.3736C3.21311 13.2582 3.75021 14.0621 4.42731 14.7392C5.1044 15.4163 5.90823 15.9534 6.79289 16.3198C7.67756 16.6862 8.62574 16.8748 9.58329 16.8748C11.5172 16.8748 13.3718 16.1066 14.7393 14.7392C16.1067 13.3717 16.875 11.517 16.875 9.58317C16.875 7.6493 16.1067 5.79464 14.7393 4.42718C13.3718 3.05973 11.5172 2.2915 9.58329 2.2915ZM1.04163 9.58317C1.04163 4.8665 4.86663 1.0415 9.58329 1.0415C14.3 1.0415 18.125 4.8665 18.125 9.58317C18.125 14.2998 14.3 18.1248 9.58329 18.1248C4.86663 18.1248 1.04163 14.2998 1.04163 9.58317ZM16.225 16.2248C16.3421 16.1078 16.501 16.0421 16.6666 16.0421C16.8323 16.0421 16.9911 16.1078 17.1083 16.2248L18.775 17.8915C18.8364 17.9487 18.8856 18.0177 18.9198 18.0944C18.9539 18.1711 18.9723 18.2538 18.9738 18.3377C18.9753 18.4217 18.9598 18.505 18.9284 18.5828C18.897 18.6607 18.8502 18.7314 18.7908 18.7907C18.7315 18.8501 18.6608 18.8968 18.583 18.9283C18.5051 18.9597 18.4218 18.9751 18.3379 18.9737C18.2539 18.9722 18.1712 18.9538 18.0945 18.9197C18.0178 18.8855 17.9488 18.8362 17.8916 18.7748L16.225 17.1082C16.1079 16.991 16.0422 16.8321 16.0422 16.6665C16.0422 16.5009 16.1079 16.342 16.225 16.2248Z"
+                    fill="black" />
+                </svg>
+                <input class="outline-none border-0 fs-14 w-100" placeholder="جستجو در بین محصولات ...">
+              </form>
+              <!-- login desktop -->
+              <a class="d-xl-flex d-none align-items-center bg-white py-13 px-19 rounded-pill gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path
+                    d="M9.79604 12.5396C6.34564 12.5396 3.39844 13.0836 3.39844 15.2596C3.39844 17.4364 6.32724 17.9996 9.79604 17.9996C13.2464 17.9996 16.1936 17.4564 16.1936 15.2796C16.1936 13.1028 13.2656 12.5396 9.79604 12.5396Z"
+                    fill="#27817A" />
+                  <path opacity="0.4"
+                    d="M9.79598 10.4667C12.1464 10.4667 14.0296 8.58271 14.0296 6.23311C14.0296 3.88351 12.1464 1.99951 9.79598 1.99951C7.44638 1.99951 5.56238 3.88351 5.56238 6.23311C5.56238 8.58271 7.44638 10.4667 9.79598 10.4667Z"
+                    fill="#27817A" />
+                </svg>
+                <p class="mb-0 fs-14 fw-medium text-dark">ورود به حساب کاربری</p>
+              </a>
+              <!-- login mobile -->
+              <a
+                class="d-xl-none d-block w-30 h-30 rounded-9 bg-white d-flex align-items-center justify-content-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M12.4 14.5391C15.8709 14.5391 18.8 15.1032 18.8 17.2792C18.8 19.456 15.8517 20 12.4 20C8.9299 20 6 19.436 6 17.26C6 15.0832 8.94831 14.5391 12.4 14.5391ZM12.4 4C14.7513 4 16.6352 5.88322 16.6352 8.23284C16.6352 10.5825 14.7513 12.4665 12.4 12.4665C10.0495 12.4665 8.16481 10.5825 8.16481 8.23284C8.16481 5.88322 10.0495 4 12.4 4Z"
+                    fill="#1E2D48" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div
+            class="rounded-b-26 d-flex align-items-center justify-content-between d-xl-block bg-gradient-main position-absolute position-sm-static w-92 py-3 py-xl-0 px-3 px-xl-0 mx-md-5 mx-4">
+            <!-- svg -->
+            <img alt="shape" src="assets/img/bg-header2.png"
+              class="position-absolute end-0 start-0 object-cover mx-auto z-0 px-5 top-0 bottom-0 h-100 w-100 d-none d-xl-block">
+            <!-- menu -->
+            <ul
+              class="d-xl-flex menu d-none align-items-center h-65 justify-content-center gap-5 list-unstyled p-0 mb-0 fs-13 z-10 position-relative">
+              <li class="h-100 d-flex align-items-center"><a class="text-white h-100 d-flex align-items-center">صفحه
+                  اصلی</a></li>
+              <li id="productMenu" class="h-100 d-flex align-items-center">
+                <a class="text-white d-flex h-100 align-items-center gap-2">
+                  <p class="mb-0">محصولات</p>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="9" height="6" viewBox="0 0 9 6" fill="none">
+                    <path d="M8.22119 1.51422L4.44977 5.28564L0.678343 1.51422" stroke="white" stroke-width="1.25714"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </a>
+              </li>
+              <li class="h-100 d-flex align-items-center"> <a class="text-white h-100 d-flex align-items-center">خدمات
+                  ما</a></li>
+              <li class="h-100 d-flex align-items-center"> <a class="text-white h-100 d-flex align-items-center">درباره
+                  ما</a></li>
+              <li class="h-100 d-flex align-items-center"><a class="text-white h-100 d-flex align-items-center">تماس با
+                  ما</a></li>
+              <li class="h-100 d-flex align-items-center"> <a
+                  class="text-white h-100 d-flex align-items-center">بلاگ</a></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle px-0 text-white d-flex align-items-center gap-1 fs-12 font-bold" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                   <img alt="flag" src="assets/img/emojione_flag-for-iran.png" class="img-fluid w-22 h-22 rounded-circle">
+                   <p class="mb-0">فارسی</p>
+                </a>
+                <ul class="dropdown-menu rounded-14 border-0 py-0">
+                  <li>
+                    <a class="dropdown-item d-flex align-items-center gap-3 py-3 rounded-14" href="#">
+                      <img alt="flag" src="assets/img/circle-flags_uk.png" class="img-fluid w-34 h-34 rounded-circle">
+                      <div>
+                        <p class="mb-0 fs-12 text-second2">English</p>
+                        <p class="mb-0 fs-10 text-gray">انگلیسی</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item d-flex align-items-center gap-3 py-3 rounded-14" href="#">
+                      <img alt="flag" src="assets/img/emojione_flag-for-iran.png" class="img-fluid w-34 h-34 rounded-circle">
+                      <div>
+                        <p class="mb-0 fs-12 text-second2">فارسی</p>
+                        <p class="mb-0 fs-10 text-gray">Persian</p>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+            </ul>
+            <!--  -->
+            <div class="dropdowns d-none d-xl-block py-xl-0 px-4 position-relative z-10">
+              <!-- dropdown 1 -->
+              <ul
+                class="dropdown1 list-unstyled position-relative fs-12 fw-bold z-10 d-none d-xl-flex align-items-center justify-content-between mb-0 px-4 bg-white rounded-18 p-4 end-0 start-0">
+                <li data-id="1" class="active">
+                  <a class="d-flex text-gray align-items-center gap-2">
+                    <p class="mb-0">اتوماسیون صنعتی</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                      class="bi bi-chevron-down" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd"
+                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                  </a>
+                </li>
+                <li data-id="2">
+                  <a class="text-gray d-flex align-items-center gap-2">
+                    <p class="mb-0">برق صنعتی</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                      class="bi bi-chevron-down" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd"
+                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                  </a>
+                </li>
+                <li data-id="3">
+                  <a class="text-gray d-flex align-items-center gap-2">
+                    <p class="mb-0">سنسور</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                      class="bi bi-chevron-down" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd"
+                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                  </a>
+                </li>
+                <li data-id="4">
+                  <a class="text-gray d-flex align-items-center gap-2">
+                    <p class="mb-0">کنترل و نمایشگر</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                      class="bi bi-chevron-down" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd"
+                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                  </a>
+                </li>
+                <li data-id="5">
+                  <a class="text-gray d-flex align-items-center gap-2">
+                    <p class="mb-0">تابلوبرق و تجهیزات</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                      class="bi bi-chevron-down" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd"
+                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                  </a>
+                </li>
+                <li data-id="6">
+                  <a class="text-gray d-flex align-items-center gap-2">
+                    <p class="mb-0">سیم و کابل</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                      class="bi bi-chevron-down" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd"
+                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                  </a>
+                </li>
+                <li data-id="7">
+                  <a class="text-gray d-flex align-items-center gap-2">
+                    <p class="mb-0">نور و روشنایی</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                      class="bi bi-chevron-down" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd"
+                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                  </a>
+                </li>
+                <li data-id="8">
+                  <a class="text-gray d-flex align-items-center gap-2">
+                    <p class="mb-0">برق خانگی</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                      class="bi bi-chevron-down" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd"
+                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                  </a>
+                </li>
+                <li data-id="9">
+                  <a class="text-gray d-flex align-items-center gap-2">
+                    <p class="mb-0">ابزار و اندازه گیری</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                      class="bi bi-chevron-down" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd"
+                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+              <!-- dropdown 2 -->
+              <ul
+                class="dropdown2 list-unstyled d-none d-xl-block mt-4 position-relative fs-14 fw-bold z-10 mb-0 px-5 bg-white rounded-18 p-4 end-0 start-0">
+                <li data-id="1" class="active flex-wrap align-items-center gap-5 position-relative">
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                    <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
+                  </svg>
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                    <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
+                  </svg>
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                    <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
+                  </svg>
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                    <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
+                  </svg>
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                    <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
+                  </svg>
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                </li>
+                <li data-id="2" class="flex-wrap align-items-center gap-5 position-relative">
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">برق صنعتی</p>
+                  </a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                    <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
+                  </svg>
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                    <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
+                  </svg>
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                    <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
+                  </svg>
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                    <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
+                  </svg>
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                    <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
+                  </svg>
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                </li>
+                <li data-id="3" class="flex-wrap align-items-center gap-5 position-relative">
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                    <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
+                  </svg>
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                    <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
+                  </svg>
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                    <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
+                  </svg>
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                    <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
+                  </svg>
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                    <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
+                  </svg>
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                </li>
+                <li data-id="4" class="flex-wrap align-items-center gap-5 position-relative">
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                    <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
+                  </svg>
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                    <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
+                  </svg>
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                    <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
+                  </svg>
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                    <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
+                  </svg>
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                    <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
+                  </svg>
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                </li>
+                <li data-id="5" class="flex-wrap align-items-center gap-5 position-relative">
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                    <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
+                  </svg>
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                    <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
+                  </svg>
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                    <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
+                  </svg>
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                    <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
+                  </svg>
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                    <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
+                  </svg>
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                </li>
+                <li data-id="6" class="flex-wrap align-items-center gap-5 position-relative">
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                    <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
+                  </svg>
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                    <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
+                  </svg>
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                    <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
+                  </svg>
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                    <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
+                  </svg>
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                    <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
+                  </svg>
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                </li>
+                <li data-id="7" class="flex-wrap align-items-center gap-5 position-relative">
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                    <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
+                  </svg>
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                    <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
+                  </svg>
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                    <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
+                  </svg>
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                    <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
+                  </svg>
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                    <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
+                  </svg>
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                </li>
+                <li data-id="8" class="flex-wrap align-items-center gap-5 position-relative">
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                    <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
+                  </svg>
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                    <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
+                  </svg>
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                    <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
+                  </svg>
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                    <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
+                  </svg>
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                    <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
+                  </svg>
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                </li>
+                <li data-id="9" class="flex-wrap align-items-center gap-5 position-relative">
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                    <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
+                  </svg>
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                    <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
+                  </svg>
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                    <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
+                  </svg>
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                    <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
+                  </svg>
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                    <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
+                  </svg>
+                  <a class="text-center text-dark">
+                    <img alt="product" src="assets/img/image 8.png" class="img-fluid d-block mx-auto">
+                    <p class="mb-0 mt-3">منبع تغذیه</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- cart icon && phone number (mobile size) -->
+            <a class="d-xl-none">
+              <p class="text-white fs-15 mb-0 font-bold"><span class="fw-bold">0912</span>۱۲۳۴۵۶۷۸۹</p>
+              <p class="mb-0 fs-13 text-white-50">پشتیبانی سریع</p>
+            </a>
+            <a class="d-block d-xl-none align-items-center justify-content-center">
+              <svg class="d-block mx-auto mb-2" xmlns="http://www.w3.org/2000/svg" width="20" height="19"
+                viewBox="0 0 20 19" fill="none">
+                <path opacity="0.4"
+                  d="M5.20959 15.8936C6.00577 15.8936 6.65806 16.5458 6.65806 17.3516C6.65806 18.1478 6.00577 18.8001 5.20959 18.8001C4.40382 18.8001 3.75153 18.1478 3.75153 17.3516C3.75153 16.5458 4.40382 15.8936 5.20959 15.8936ZM16.0012 15.8936C16.7974 15.8936 17.4497 16.5458 17.4497 17.3516C17.4497 18.1478 16.7974 18.8001 16.0012 18.8001C15.1954 18.8001 14.5431 18.1478 14.5431 17.3516C14.5431 16.5458 15.1954 15.8936 16.0012 15.8936Z"
+                  fill="white" />
+                <path
+                  d="M0.844854 0.00799104L3.13267 0.353322C3.45882 0.411836 3.69863 0.679468 3.72741 1.00561L3.90967 3.15434C3.93844 3.46226 4.18785 3.69248 4.49481 3.69248H17.4495C18.0347 3.69248 18.4184 3.89392 18.8021 4.33518C19.1858 4.77644 19.2529 5.40954 19.1666 5.98414L18.2553 12.2768C18.0826 13.4865 17.0466 14.3776 15.8284 14.3776H5.36293C4.08713 14.3776 3.03195 13.3992 2.92643 12.1339L2.04392 1.67709L0.595448 1.42769C0.211747 1.36054 -0.0568432 0.986429 0.0103044 0.602728C0.0774521 0.209434 0.451561 -0.0495641 0.844854 0.00799104ZM14.2936 7.24076H11.6364C11.2336 7.24076 10.917 7.55731 10.917 7.9602C10.917 8.35349 11.2336 8.67964 11.6364 8.67964H14.2936C14.6965 8.67964 15.013 8.35349 15.013 7.9602C15.013 7.55731 14.6965 7.24076 14.2936 7.24076Z"
+                  fill="white" />
+              </svg>
+              <!-- cart number -->
+              <span class="d-block bg-white text-dark w-26 h-11 rounded-5 fs-10 text-center shadow1">12</span>
+            </a>
+          </div>
+          <!-- mobile menu -->
+          <div id="mobileMenu" class="position-absolute end-0 start-0 d-xl-none rounded-18">
+            <ul class="list-unstyled mb-0 pe-0">
+              <li class="px-3"><a class="d-block font-bold text-dark py-4">صفحه اصلی</a></li>
+              <li class="px-3">
+                <div class="d-flex align-items-center justify-content-between cursor-pointer py-4 accordionBtn">
+                  <p class="mb-0 font-bold">محصولات</p>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-chevron-up" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z" />
+                  </svg>
+                </div>
+                <ul class="accordionContent list-unstyled mb-0 pe-0 position-relative">
+                  <li>
+                    <div
+                      class="d-flex align-items-center justify-content-between cursor-pointer py-3 border-dash-r-2 accordionBtn">
+                      <div class="d-flex align-items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16" fill="none">
+                          <circle cx="7.5" cy="8" r="5.5" fill="transparent" stroke="#27817A" stroke-width="4" />
+                        </svg>
+                        <p class="mb-0 fs-14">لورم ایپسوم متن ساختگی</p>
+                      </div>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-chevron-up" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                          d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z" />
+                      </svg>
+                    </div>
+                    <ul class="accordionContent position-relative list-unstyled pe-4 border-dash-r-2">
+                      <li class="border-dash-r-2">
+                        <div
+                          class="d-flex align-items-center position-relative -right-8 justify-content-between cursor-pointer py-3 accordionBtn">
+                          <a class="d-flex align-items-center gap-2 text-dark w-100">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16"
+                              fill="none">
+                              <circle cx="7.5" cy="8.35718" r="5.5" fill="transparent" stroke="#D5D5D5"
+                                stroke-width="4" />
+                            </svg>
+                            <img alt="product" src="assets/img/image 8(1).png" class="img-fluid">
+                            <p class="mb-0 fs-12">لورم ایپسوم متن ساختگی</p>
+                          </a>
+                        </div>
+                      </li>
+                      <li class="border-dash-r-2">
+                        <div
+                          class="d-flex align-items-center position-relative -right-8 justify-content-between cursor-pointer py-3 accordionBtn">
+                          <a class="d-flex align-items-center gap-2 text-dark w-100">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16"
+                              fill="none">
+                              <circle cx="7.5" cy="8.35718" r="5.5" fill="transparent" stroke="#D5D5D5"
+                                stroke-width="4" />
+                            </svg>
+                            <img alt="product" src="assets/img/image 8(1).png" class="img-fluid">
+                            <p class="mb-0 fs-12">لورم ایپسوم متن ساختگی</p>
+                          </a>
+                        </div>
+                      </li>
+                      <li class="border-dash-r-2">
+                        <div
+                          class="d-flex align-items-center position-relative -right-8 justify-content-between cursor-pointer py-3 accordionBtn">
+                          <a class="d-flex align-items-center gap-2 text-dark w-100">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16"
+                              fill="none">
+                              <circle cx="7.5" cy="8.35718" r="5.5" fill="transparent" stroke="#D5D5D5"
+                                stroke-width="4" />
+                            </svg>
+                            <img alt="product" src="assets/img/image 8(1).png" class="img-fluid">
+                            <p class="mb-0 fs-12">لورم ایپسوم متن ساختگی</p>
+                          </a>
+                        </div>
+                      </li>
+                      <li class="border-dash-r-2">
+                        <div
+                          class="d-flex align-items-center position-relative -right-8 justify-content-between cursor-pointer py-3 accordionBtn">
+                          <a class="d-flex align-items-center gap-2 text-dark w-100">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16"
+                              fill="none">
+                              <circle cx="7.5" cy="8.35718" r="5.5" fill="transparent" stroke="#D5D5D5"
+                                stroke-width="4" />
+                            </svg>
+                            <img alt="product" src="assets/img/image 8(1).png" class="img-fluid">
+                            <p class="mb-0 fs-12">لورم ایپسوم متن ساختگی</p>
+                          </a>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <div
+                      class="d-flex align-items-center justify-content-between cursor-pointer border-dash-r-2 py-3 accordionBtn">
+                      <div class="d-flex align-items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16" fill="none">
+                          <circle cx="7.5" cy="8" r="5.5" fill="transparent" stroke="#27817A" stroke-width="4" />
+                        </svg>
+                        <p class="mb-0 fs-14">لورم ایپسوم متن ساختگی</p>
+                      </div>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-chevron-up" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                          d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z" />
+                      </svg>
+                    </div>
+                    <ul class="accordionContent list-unstyled pe-4 border-dash-r-2">
+                      <li class="border-dash-r-2">
+                        <div
+                          class="d-flex align-items-center position-relative -right-8 justify-content-between cursor-pointer py-3 accordionBtn">
+                          <a class="d-flex align-items-center gap-2 text-dark w-100">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16"
+                              fill="none">
+                              <circle cx="7.5" cy="8.35718" r="5.5" fill="transparent" stroke="#D5D5D5"
+                                stroke-width="4" />
+                            </svg>
+                            <img alt="product" src="assets/img/image 8(1).png" class="img-fluid">
+                            <p class="mb-0 fs-12">لورم ایپسوم متن ساختگی</p>
+                          </a>
+                        </div>
+                      </li>
+                      <li class="border-dash-r-2">
+                        <div
+                          class="d-flex align-items-center position-relative -right-8 justify-content-between cursor-pointer py-3 accordionBtn">
+                          <a class="d-flex align-items-center gap-2 text-dark w-100">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16"
+                              fill="none">
+                              <circle cx="7.5" cy="8.35718" r="5.5" fill="transparent" stroke="#D5D5D5"
+                                stroke-width="4" />
+                            </svg>
+                            <img alt="product" src="assets/img/image 8(1).png" class="img-fluid">
+                            <p class="mb-0 fs-12">لورم ایپسوم متن ساختگی</p>
+                          </a>
+                        </div>
+                      </li>
+                      <li class="border-dash-r-2">
+                        <div
+                          class="d-flex align-items-center position-relative -right-8 justify-content-between cursor-pointer py-3 accordionBtn">
+                          <a class="d-flex align-items-center gap-2 text-dark w-100">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16"
+                              fill="none">
+                              <circle cx="7.5" cy="8.35718" r="5.5" fill="transparent" stroke="#D5D5D5"
+                                stroke-width="4" />
+                            </svg>
+                            <img alt="product" src="assets/img/image 8(1).png" class="img-fluid">
+                            <p class="mb-0 fs-12">لورم ایپسوم متن ساختگی</p>
+                          </a>
+                        </div>
+                      </li>
+                      <li class="border-dash-r-2">
+                        <div
+                          class="d-flex align-items-center position-relative -right-8 justify-content-between cursor-pointer py-3 accordionBtn">
+                          <a class="d-flex align-items-center gap-2 text-dark w-100">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16"
+                              fill="none">
+                              <circle cx="7.5" cy="8.35718" r="5.5" fill="transparent" stroke="#D5D5D5"
+                                stroke-width="4" />
+                            </svg>
+                            <img alt="product" src="assets/img/image 8(1).png" class="img-fluid">
+                            <p class="mb-0 fs-12">لورم ایپسوم متن ساختگی</p>
+                          </a>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <div
+                      class="d-flex align-items-center justify-content-between border-dash-r-2 cursor-pointer py-3 accordionBtn">
+                      <div class="d-flex align-items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16" fill="none">
+                          <circle cx="7.5" cy="8" r="5.5" fill="transparent" stroke="#27817A" stroke-width="4" />
+                        </svg>
+                        <p class="mb-0 fs-14">لورم ایپسوم متن ساختگی</p>
+                      </div>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-chevron-up" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                          d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z" />
+                      </svg>
+                    </div>
+                    <ul class="accordionContent list-unstyled pe-4 border-dash-r-2">
+                      <li class="border-dash-r-2">
+                        <div
+                          class="d-flex align-items-center position-relative -right-8 justify-content-between cursor-pointer py-3 accordionBtn">
+                          <a class="d-flex align-items-center gap-2 text-dark w-100">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16"
+                              fill="none">
+                              <circle cx="7.5" cy="8.35718" r="5.5" fill="transparent" stroke="#D5D5D5"
+                                stroke-width="4" />
+                            </svg>
+                            <img alt="product" src="assets/img/image 8(1).png" class="img-fluid">
+                            <p class="mb-0 fs-12">لورم ایپسوم متن ساختگی</p>
+                          </a>
+                        </div>
+                      </li>
+                      <li class="border-dash-r-2">
+                        <div
+                          class="d-flex align-items-center position-relative -right-8 justify-content-between cursor-pointer py-3 accordionBtn">
+                          <a class="d-flex align-items-center gap-2 text-dark w-100">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16"
+                              fill="none">
+                              <circle cx="7.5" cy="8.35718" r="5.5" fill="transparent" stroke="#D5D5D5"
+                                stroke-width="4" />
+                            </svg>
+                            <img alt="product" src="assets/img/image 8(1).png" class="img-fluid">
+                            <p class="mb-0 fs-12">لورم ایپسوم متن ساختگی</p>
+                          </a>
+                        </div>
+                      </li>
+                      <li class="border-dash-r-2">
+                        <div
+                          class="d-flex align-items-center position-relative -right-8 justify-content-between cursor-pointer py-3 accordionBtn">
+                          <a class="d-flex align-items-center gap-2 text-dark w-100">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16"
+                              fill="none">
+                              <circle cx="7.5" cy="8.35718" r="5.5" fill="transparent" stroke="#D5D5D5"
+                                stroke-width="4" />
+                            </svg>
+                            <img alt="product" src="assets/img/image 8(1).png" class="img-fluid">
+                            <p class="mb-0 fs-12">لورم ایپسوم متن ساختگی</p>
+                          </a>
+                        </div>
+                      </li>
+                      <li class="border-dash-r-2">
+                        <div
+                          class="d-flex align-items-center position-relative -right-8 justify-content-between cursor-pointer py-3 accordionBtn">
+                          <a class="d-flex align-items-center gap-2 text-dark w-100">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16"
+                              fill="none">
+                              <circle cx="7.5" cy="8.35718" r="5.5" fill="transparent" stroke="#D5D5D5"
+                                stroke-width="4" />
+                            </svg>
+                            <img alt="product" src="assets/img/image 8(1).png" class="img-fluid">
+                            <p class="mb-0 fs-12">لورم ایپسوم متن ساختگی</p>
+                          </a>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <div
+                      class="d-flex align-items-center justify-content-between border-dash-r-2 cursor-pointer py-3 accordionBtn">
+                      <div class="d-flex align-items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16" fill="none">
+                          <circle cx="7.5" cy="8" r="5.5" fill="transparent" stroke="#27817A" stroke-width="4" />
+                        </svg>
+                        <p class="mb-0 fs-14">لورم ایپسوم متن ساختگی</p>
+                      </div>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-chevron-up" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                          d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z" />
+                      </svg>
+                    </div>
+                    <ul class="accordionContent list-unstyled pe-4 border-dash-r-2">
+                      <li class="border-dash-r-2">
+                        <div
+                          class="d-flex align-items-center position-relative -right-8 justify-content-between cursor-pointer py-3 accordionBtn">
+                          <a class="d-flex align-items-center gap-2 text-dark w-100">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16"
+                              fill="none">
+                              <circle cx="7.5" cy="8.35718" r="5.5" fill="transparent" stroke="#D5D5D5"
+                                stroke-width="4" />
+                            </svg>
+                            <img alt="product" src="assets/img/image 8(1).png" class="img-fluid">
+                            <p class="mb-0 fs-12">لورم ایپسوم متن ساختگی</p>
+                          </a>
+                        </div>
+                      </li>
+                      <li class="border-dash-r-2">
+                        <div
+                          class="d-flex align-items-center position-relative -right-8 justify-content-between cursor-pointer py-3 accordionBtn">
+                          <a class="d-flex align-items-center gap-2 text-dark w-100">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16"
+                              fill="none">
+                              <circle cx="7.5" cy="8.35718" r="5.5" fill="transparent" stroke="#D5D5D5"
+                                stroke-width="4" />
+                            </svg>
+                            <img alt="product" src="assets/img/image 8(1).png" class="img-fluid">
+                            <p class="mb-0 fs-12">لورم ایپسوم متن ساختگی</p>
+                          </a>
+                        </div>
+                      </li>
+                      <li class="border-dash-r-2">
+                        <div
+                          class="d-flex align-items-center position-relative -right-8 justify-content-between cursor-pointer py-3 accordionBtn">
+                          <a class="d-flex align-items-center gap-2 text-dark w-100">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16"
+                              fill="none">
+                              <circle cx="7.5" cy="8.35718" r="5.5" fill="transparent" stroke="#D5D5D5"
+                                stroke-width="4" />
+                            </svg>
+                            <img alt="product" src="assets/img/image 8(1).png" class="img-fluid">
+                            <p class="mb-0 fs-12">لورم ایپسوم متن ساختگی</p>
+                          </a>
+                        </div>
+                      </li>
+                      <li class="border-dash-r-2">
+                        <div
+                          class="d-flex align-items-center position-relative -right-8 justify-content-between cursor-pointer py-3 accordionBtn">
+                          <a class="d-flex align-items-center gap-2 text-dark w-100">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16"
+                              fill="none">
+                              <circle cx="7.5" cy="8.35718" r="5.5" fill="transparent" stroke="#D5D5D5"
+                                stroke-width="4" />
+                            </svg>
+                            <img alt="product" src="assets/img/image 8(1).png" class="img-fluid">
+                            <p class="mb-0 fs-12">لورم ایپسوم متن ساختگی</p>
+                          </a>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="px-3"><a class="d-block font-bold text-dark py-4">پرسش و پاسخ</a></li>
+              <li class="px-3"><a class="d-block font-bold text-dark py-4">تماس با ما</a></li>
+              <li class="px-3"><a class="d-block font-bold text-dark py-4">درباره ما</a></li>
+            </ul>
+          </div>
+        </div>
+        <!--  -->
+        <div class="flex-shrink-0 d-none d-xl-block">
+          <div class="mt-3">
+            <a
+              class="rounded-22 me-auto bg-second w-64 h-68 d-flex align-items-center justify-content-center position-relative">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path opacity="0.4"
+                  d="M5.61041 16.4941C6.40659 16.4941 7.05888 17.1464 7.05888 17.9522C7.05888 18.7484 6.40659 19.4007 5.61041 19.4007C4.80464 19.4007 4.15234 18.7484 4.15234 17.9522C4.15234 17.1464 4.80464 16.4941 5.61041 16.4941ZM16.402 16.4941C17.1982 16.4941 17.8505 17.1464 17.8505 17.9522C17.8505 18.7484 17.1982 19.4007 16.402 19.4007C15.5962 19.4007 14.9439 18.7484 14.9439 17.9522C14.9439 17.1464 15.5962 16.4941 16.402 16.4941Z"
+                  fill="#27817A" />
+                <path
+                  d="M1.24524 0.608089L3.53306 0.95342C3.85921 1.01193 4.09902 1.27957 4.1278 1.60571L4.31006 3.75444C4.33883 4.06236 4.58824 4.29258 4.8952 4.29258H17.8499C18.435 4.29258 18.8188 4.49402 19.2025 4.93528C19.5862 5.37653 19.6533 6.00964 19.567 6.58423L18.6557 12.8769C18.483 14.0865 17.447 14.9777 16.2288 14.9777H5.76332C4.48752 14.9777 3.43234 13.9993 3.32682 12.734L2.44431 2.27719L0.995839 2.02778C0.612138 1.96064 0.343547 1.58653 0.410695 1.20283C0.477843 0.809532 0.851951 0.550534 1.24524 0.608089ZM14.694 7.84086H12.0368C11.6339 7.84086 11.3174 8.15741 11.3174 8.56029C11.3174 8.95359 11.6339 9.27973 12.0368 9.27973H14.694C15.0969 9.27973 15.4134 8.95359 15.4134 8.56029C15.4134 8.15741 15.0969 7.84086 14.694 7.84086Z"
+                  fill="#27817A" />
+              </svg>
+              <!-- cart number -->
+              <span
+                class="d-block bg-white position-absolute text-dark w-36 h-15 rounded-5 fs-12 text-center bottom-8 shadow1">12</span>
+            </a>
+            <p class="mb-0 fs-13 text-gray mt-3 text-start ms-1">سبد خرید</p>
+          </div>
+          <div class="mt-4">
+            <a class="text-start">
+              <p class="text-dark fs-14 fw-bold mb-0">0912</p>
+              <p class="fs-14 fw-bold mb-0 text-main">۱۲۳۴۵۶۷۸۹</p>
+            </a>
+            <p class="fs-13 text-gray mb-0">پشتیبانی سریع</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- main -->
+
+  <main class="mt-4">
+   
+    <section>
+      <div class="container">
+          <div class="d-flex gap-4">
+             <div class="w-362 mt-5">
+                <div>
+                  <div class="position-relative">
+                    <div class="position-relative">
+                      <img alt="avatarbg" src="assets/img/avatarHeader.png" class="img-fluid w-100">
+                      <img alt="avatarbg" src="assets/img/avatarSvg.png" class="img-fluid position-absolute end-0 top-0 z-0">
+                    </div>
+                    <div class="position-absolute end-0 start-0 top-0 mx-4 -mt-12">
+                      <!-- avatar -->
+                        <div class="rounded-circle w-76 h-76 border-second-5 mx-auto -top-33 position-relative">
+                           <img alt="avatar" src="assets/img/avatar.png" class="img-fluid rounded-circle w-100 h-100">
+                        </div>
+                      <!--  -->
+                      <div class="d-flex align-items-center justify-content-between">
+                          <div>
+                            <p class="mb-0 font-bold text-white">عطا حیدری</p>
+                            <p class="fs-12 text-white-50 mb-0">۰۹۱۲۳۴۵۶۷۸۹</p>
+                          </div>
+                          <div class="d-flex align-items-center justify-content-center gap-3 bg-white rounded-pill w-84 h-32">
+                              <a class="d-block">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                  <path d="M11.8743 2.15009C11.841 2.35842 11.8243 2.56675 11.8243 2.77509C11.8243 4.65009 13.341 6.16592 15.2077 6.16592C15.416 6.16592 15.616 6.14175 15.8243 6.10842V12.8326C15.8243 15.6584 14.1577 17.3334 11.3243 17.3334H5.16685C2.33268 17.3334 0.666016 15.6584 0.666016 12.8326V6.66675C0.666016 3.83342 2.33268 2.15009 5.16685 2.15009H11.8743ZM12.0418 7.21675C11.816 7.19175 11.5918 7.29175 11.4577 7.47509L9.44185 10.0834L7.13268 8.26675C6.99101 8.15842 6.82435 8.11592 6.65768 8.13342C6.49185 8.15842 6.34185 8.24925 6.24101 8.38259L3.77518 11.5918L3.72435 11.6668C3.58268 11.9326 3.64935 12.2743 3.89935 12.4584C4.01602 12.5334 4.14102 12.5834 4.28268 12.5834C4.47518 12.5918 4.65768 12.4909 4.77435 12.3334L6.86601 9.64092L9.24101 11.4251L9.31601 11.4743C9.58268 11.6159 9.91601 11.5501 10.1077 11.2993L12.516 8.19175L12.4827 8.20842C12.616 8.02509 12.641 7.79175 12.5493 7.58342C12.4585 7.37509 12.2577 7.23342 12.0418 7.21675ZM15.3244 0.666504C16.4328 0.666504 17.3328 1.5665 17.3328 2.67484C17.3328 3.78317 16.4328 4.68317 15.3244 4.68317C14.2161 4.68317 13.3161 3.78317 13.3161 2.67484C13.3161 1.5665 14.2161 0.666504 15.3244 0.666504Z" fill="black"/>
+                                  </svg>
+                              </a>
+                              <a class="d-block">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                  <path d="M13.9249 9.35825L17.2657 9.35825C17.621 9.35825 17.917 9.64159 17.917 9.99992C17.917 10.3208 17.6682 10.5926 17.3532 10.6356L17.2657 10.6416L13.9249 10.6416L13.9246 14.6248C13.9246 16.6082 12.3005 18.2376 10.275 18.3291L10.0953 18.3332L5.89583 18.3332C3.85612 18.3332 2.18183 16.7604 2.08782 14.8065L2.08366 14.6332L2.08366 5.3665C2.08366 3.38317 3.69967 1.76158 5.73262 1.67053L5.91304 1.6665L10.1039 1.6665C12.1436 1.6665 13.826 3.23143 13.9205 5.18483L13.9246 5.35817L13.9246 9.35817L8.58931 9.35817L9.96617 8.02484C10.2243 7.77484 10.2243 7.3665 9.96617 7.1165C9.83709 6.9915 9.66498 6.93317 9.49288 6.93317C9.36207 6.93317 9.22576 6.9705 9.11038 7.04944L9.02819 7.1165L6.51542 9.5415C6.38634 9.65817 6.3175 9.82483 6.3175 9.99983C6.3175 10.1387 6.3653 10.2776 6.45594 10.3876L6.51542 10.4498L9.02819 12.8748C9.28635 13.1248 9.70801 13.1248 9.96617 12.8748C10.2009 12.6476 10.2222 12.2894 10.0302 12.0384L9.96617 11.9665L8.58931 10.6415L13.9246 10.6415L13.9249 9.35825Z" fill="black"/>
+                                  </svg>
+                              </a>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bg-white rounded-t-5 rounded-b-21 p-4 shadow6 mt-2">
+                    <a class="d-flex align-items-center justify-content-between text-dark py-2">
+                      <div class="d-flex align-items-center gap-3">
+                         <div class="bg-second2 rounded-circle w-34 h-34 d-flex align-items-center justify-content-center">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M6.60033 11.2248C7.77533 11.2248 8.71699 12.1757 8.71699 13.359V16.1998C8.71699 17.3748 7.77533 18.3332 6.60033 18.3332H3.78366C2.61699 18.3332 1.66699 17.3748 1.66699 16.1998V13.359C1.66699 12.1757 2.61699 11.2248 3.78366 11.2248H6.60033ZM16.2171 11.2248C17.3837 11.2248 18.3337 12.1757 18.3337 13.359V16.1998C18.3337 17.3748 17.3837 18.3332 16.2171 18.3332H13.4004C12.2254 18.3332 11.2837 17.3748 11.2837 16.1998V13.359C11.2837 12.1757 12.2254 11.2248 13.4004 11.2248H16.2171ZM6.60033 1.66675C7.77533 1.66675 8.71699 2.62508 8.71699 3.80091V6.64175C8.71699 7.82508 7.77533 8.77508 6.60033 8.77508H3.78366C2.61699 8.77508 1.66699 7.82508 1.66699 6.64175V3.80091C1.66699 2.62508 2.61699 1.66675 3.78366 1.66675H6.60033ZM16.2171 1.66675C17.3837 1.66675 18.3337 2.62508 18.3337 3.80091V6.64175C18.3337 7.82508 17.3837 8.77508 16.2171 8.77508H13.4004C12.2254 8.77508 11.2837 7.82508 11.2837 6.64175V3.80091C11.2837 2.62508 12.2254 1.66675 13.4004 1.66675H16.2171Z" fill="white"/>
+                            </svg>
+                         </div>
+                         <p class="mb-0 font-bold fs-14">پیشخوان کاربری</p>
+                      </div>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="6" height="8" viewBox="0 0 6 8" fill="none">
+                        <path d="M0.221529 2.9214C0.255431 2.8866 0.383438 2.7378 0.502679 2.6154C1.20175 1.8456 3.02543 0.5856 3.97993 0.201C4.12489 0.1392 4.49138 0.00839993 4.68719 -5.73848e-08C4.87482 -4.91833e-08 5.05368 0.0431999 5.22435 0.1308C5.43712 0.2532 5.60779 0.4458 5.70132 0.6732C5.76152 0.831 5.85504 1.3032 5.85504 1.3116C5.94856 1.8282 6 2.6676 6 3.5952C6 4.479 5.94856 5.2842 5.87199 5.8086C5.86322 5.817 5.7697 6.4038 5.66741 6.6048C5.47979 6.972 5.1133 7.2 4.72109 7.2L4.68719 7.2C4.43176 7.191 3.89459 6.963 3.89459 6.9546C2.99152 6.5694 1.20994 5.3712 0.493911 4.575C0.493911 4.575 0.292255 4.3704 0.204578 4.2426C0.0678027 4.059 -1.67485e-07 3.8316 -1.57545e-07 3.6042C-1.46451e-07 3.3504 0.0765704 3.114 0.221529 2.9214Z" fill="#D6D6D6"/>
+                        </svg>
+                    </a>
+                    <a class="d-flex align-items-center justify-content-between text-dark py-2">
+                      <div class="d-flex align-items-center gap-3">
+                         <div class="rounded-circle w-34 h-34 d-flex align-items-center justify-content-center">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <g opacity="0.3">
+                            <path d="M9.99967 12.645C13.6152 12.645 16.6663 13.2325 16.6663 15.4992C16.6663 17.7667 13.5952 18.3334 9.99967 18.3334C6.38499 18.3334 3.33301 17.7459 3.33301 15.4792C3.33301 13.2117 6.40416 12.645 9.99967 12.645ZM9.99967 1.66675C12.4489 1.66675 14.4113 3.62843 14.4113 6.07596C14.4113 8.52348 12.4489 10.486 9.99967 10.486C7.55126 10.486 5.58802 8.52348 5.58802 6.07596C5.58802 3.62843 7.55126 1.66675 9.99967 1.66675Z" fill="#0E1935"/>
+                            </g>
+                            </svg>
+                         </div>
+                         <p class="mb-0 font-bold fs-14 text-gray2">اطلاعات حساب</p>
+                      </div>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="6" height="8" viewBox="0 0 6 8" fill="none">
+                        <path d="M0.221529 2.9214C0.255431 2.8866 0.383438 2.7378 0.502679 2.6154C1.20175 1.8456 3.02543 0.5856 3.97993 0.201C4.12489 0.1392 4.49138 0.00839993 4.68719 -5.73848e-08C4.87482 -4.91833e-08 5.05368 0.0431999 5.22435 0.1308C5.43712 0.2532 5.60779 0.4458 5.70132 0.6732C5.76152 0.831 5.85504 1.3032 5.85504 1.3116C5.94856 1.8282 6 2.6676 6 3.5952C6 4.479 5.94856 5.2842 5.87199 5.8086C5.86322 5.817 5.7697 6.4038 5.66741 6.6048C5.47979 6.972 5.1133 7.2 4.72109 7.2L4.68719 7.2C4.43176 7.191 3.89459 6.963 3.89459 6.9546C2.99152 6.5694 1.20994 5.3712 0.493911 4.575C0.493911 4.575 0.292255 4.3704 0.204578 4.2426C0.0678027 4.059 -1.67485e-07 3.8316 -1.57545e-07 3.6042C-1.46451e-07 3.3504 0.0765704 3.114 0.221529 2.9214Z" fill="#D6D6D6"/>
+                        </svg>
+                    </a>
+                    <a class="d-flex align-items-center justify-content-between text-dark py-2">
+                      <div class="d-flex align-items-center gap-3">
+                         <div class="rounded-circle w-34 h-34 d-flex align-items-center justify-content-center">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <g opacity="0.3">
+                            <path d="M6.18892 15.7566C6.88005 15.7566 7.44627 16.3349 7.44627 17.0493C7.44627 17.7551 6.88005 18.3334 6.18892 18.3334C5.48946 18.3334 4.92324 17.7551 4.92324 17.0493C4.92324 16.3349 5.48946 15.7566 6.18892 15.7566ZM15.5566 15.7566C16.2477 15.7566 16.814 16.3349 16.814 17.0493C16.814 17.7551 16.2477 18.3334 15.5566 18.3334C14.8572 18.3334 14.2909 17.7551 14.2909 17.0493C14.2909 16.3349 14.8572 15.7566 15.5566 15.7566ZM2.31551 1.66685L2.40037 1.67403L4.38632 1.97933C4.66944 2.03121 4.87761 2.26848 4.90259 2.55762L5.0608 4.46257C5.08578 4.73556 5.30228 4.93966 5.56874 4.93966H16.8141C17.3221 4.93966 17.6551 5.11825 17.9882 5.50944C18.3213 5.90064 18.3796 6.46192 18.3046 6.97132L17.5136 12.5501C17.3637 13.6225 16.4644 14.4125 15.4069 14.4125H6.32232C5.21485 14.4125 4.29889 13.546 4.2073 12.4234L3.44123 3.15292L2.18387 2.93181C1.8508 2.87228 1.61765 2.54061 1.67594 2.20044C1.73422 1.85262 2.05897 1.62215 2.40037 1.67403L2.31551 1.66685ZM14.0746 8.08538H11.7681C11.4183 8.08538 11.1436 8.36602 11.1436 8.7232C11.1436 9.07187 11.4183 9.36101 11.7681 9.36101H14.0746C14.4243 9.36101 14.6991 9.07187 14.6991 8.7232C14.6991 8.36602 14.4243 8.08538 14.0746 8.08538Z" fill="#0E1935"/>
+                            </g>
+                            </svg>
+                         </div>
+                         <p class="mb-0 font-bold fs-14 text-gray2">سفارش های من</p>
+                      </div>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="6" height="8" viewBox="0 0 6 8" fill="none">
+                        <path d="M0.221529 2.9214C0.255431 2.8866 0.383438 2.7378 0.502679 2.6154C1.20175 1.8456 3.02543 0.5856 3.97993 0.201C4.12489 0.1392 4.49138 0.00839993 4.68719 -5.73848e-08C4.87482 -4.91833e-08 5.05368 0.0431999 5.22435 0.1308C5.43712 0.2532 5.60779 0.4458 5.70132 0.6732C5.76152 0.831 5.85504 1.3032 5.85504 1.3116C5.94856 1.8282 6 2.6676 6 3.5952C6 4.479 5.94856 5.2842 5.87199 5.8086C5.86322 5.817 5.7697 6.4038 5.66741 6.6048C5.47979 6.972 5.1133 7.2 4.72109 7.2L4.68719 7.2C4.43176 7.191 3.89459 6.963 3.89459 6.9546C2.99152 6.5694 1.20994 5.3712 0.493911 4.575C0.493911 4.575 0.292255 4.3704 0.204578 4.2426C0.0678027 4.059 -1.67485e-07 3.8316 -1.57545e-07 3.6042C-1.46451e-07 3.3504 0.0765704 3.114 0.221529 2.9214Z" fill="#D6D6D6"/>
+                        </svg>
+                    </a>
+                    <a class="d-flex align-items-center justify-content-between text-dark py-2">
+                      <div class="d-flex align-items-center gap-3">
+                         <div class="rounded-circle w-34 h-34 d-flex align-items-center justify-content-center">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <g opacity="0.3">
+                            <path d="M17.8631 2.15173C17.4463 1.72391 16.8294 1.56453 16.2541 1.7323L2.84032 5.63302C2.23341 5.80163 1.80323 6.28565 1.68735 6.90054C1.56897 7.52633 1.98247 8.32074 2.52269 8.65293L6.71691 11.2308C7.14709 11.495 7.70231 11.4287 8.05829 11.0697L12.8611 6.237C13.1029 5.98534 13.503 5.98534 13.7448 6.237C13.9866 6.48027 13.9866 6.87454 13.7448 7.1262L8.93365 11.9597C8.57684 12.3179 8.51014 12.8758 8.77275 13.3086L11.3355 17.5449C11.6356 18.0482 12.1525 18.3334 12.7194 18.3334C12.7861 18.3334 12.8611 18.3334 12.9278 18.325C13.5781 18.2411 14.0949 17.7965 14.2867 17.1674L18.2633 3.77074C18.4384 3.20031 18.28 2.57955 17.8631 2.15173Z" fill="#0E1935"/>
+                            </g>
+                            </svg>
+                         </div>
+                         <p class="mb-0 font-bold fs-14 text-gray2">آدرس های من</p>
+                      </div>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="6" height="8" viewBox="0 0 6 8" fill="none">
+                        <path d="M0.221529 2.9214C0.255431 2.8866 0.383438 2.7378 0.502679 2.6154C1.20175 1.8456 3.02543 0.5856 3.97993 0.201C4.12489 0.1392 4.49138 0.00839993 4.68719 -5.73848e-08C4.87482 -4.91833e-08 5.05368 0.0431999 5.22435 0.1308C5.43712 0.2532 5.60779 0.4458 5.70132 0.6732C5.76152 0.831 5.85504 1.3032 5.85504 1.3116C5.94856 1.8282 6 2.6676 6 3.5952C6 4.479 5.94856 5.2842 5.87199 5.8086C5.86322 5.817 5.7697 6.4038 5.66741 6.6048C5.47979 6.972 5.1133 7.2 4.72109 7.2L4.68719 7.2C4.43176 7.191 3.89459 6.963 3.89459 6.9546C2.99152 6.5694 1.20994 5.3712 0.493911 4.575C0.493911 4.575 0.292255 4.3704 0.204578 4.2426C0.0678027 4.059 -1.67485e-07 3.8316 -1.57545e-07 3.6042C-1.46451e-07 3.3504 0.0765704 3.114 0.221529 2.9214Z" fill="#D6D6D6"/>
+                        </svg>
+                    </a>
+                    <a class="d-flex align-items-center justify-content-between text-dark py-2">
+                      <div class="d-flex align-items-center gap-3">
+                         <div class="rounded-circle w-34 h-34 d-flex align-items-center justify-content-center">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <g opacity="0.3">
+                            <path d="M12.558 1.66675C14.8163 1.66675 16.6413 2.55841 16.6663 4.82508V17.4751C16.6663 17.6167 16.633 17.7584 16.5663 17.8834C16.458 18.0834 16.2747 18.2334 16.0497 18.3001C15.833 18.3667 15.5913 18.3334 15.3913 18.2167L9.99134 15.5167L4.58301 18.2167C4.45884 18.2826 4.31634 18.3251 4.17467 18.3251C3.70801 18.3251 3.33301 17.9417 3.33301 17.4751V4.82508C3.33301 2.55841 5.16634 1.66675 7.41634 1.66675H12.558ZM13.1247 6.70008H6.84967C6.49134 6.70008 6.19967 6.99175 6.19967 7.35842C6.19967 7.72425 6.49134 8.01675 6.84967 8.01675H13.1247C13.483 8.01675 13.7747 7.72425 13.7747 7.35842C13.7747 6.99175 13.483 6.70008 13.1247 6.70008Z" fill="#0E1935"/>
+                            </g>
+                            </svg>
+                         </div>
+                         <p class="mb-0 font-bold fs-14 text-gray2">محصولات نشان شده</p>
+                      </div>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="6" height="8" viewBox="0 0 6 8" fill="none">
+                        <path d="M0.221529 2.9214C0.255431 2.8866 0.383438 2.7378 0.502679 2.6154C1.20175 1.8456 3.02543 0.5856 3.97993 0.201C4.12489 0.1392 4.49138 0.00839993 4.68719 -5.73848e-08C4.87482 -4.91833e-08 5.05368 0.0431999 5.22435 0.1308C5.43712 0.2532 5.60779 0.4458 5.70132 0.6732C5.76152 0.831 5.85504 1.3032 5.85504 1.3116C5.94856 1.8282 6 2.6676 6 3.5952C6 4.479 5.94856 5.2842 5.87199 5.8086C5.86322 5.817 5.7697 6.4038 5.66741 6.6048C5.47979 6.972 5.1133 7.2 4.72109 7.2L4.68719 7.2C4.43176 7.191 3.89459 6.963 3.89459 6.9546C2.99152 6.5694 1.20994 5.3712 0.493911 4.575C0.493911 4.575 0.292255 4.3704 0.204578 4.2426C0.0678027 4.059 -1.67485e-07 3.8316 -1.57545e-07 3.6042C-1.46451e-07 3.3504 0.0765704 3.114 0.221529 2.9214Z" fill="#D6D6D6"/>
+                        </svg>
+                    </a>
+                    <a class="d-flex align-items-center justify-content-between text-dark py-2">
+                      <div class="d-flex align-items-center gap-3">
+                         <div class="rounded-circle w-34 h-34 d-flex align-items-center justify-content-center">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <g opacity="0.3">
+                            <path d="M13.4925 1.66675C16.0667 1.66675 17.5 3.15008 17.5 5.69175V14.3001C17.5 16.8834 16.0667 18.3334 13.4925 18.3334H6.50833C3.975 18.3334 2.5 16.8834 2.5 14.3001V5.69175C2.5 3.15008 3.975 1.66675 6.50833 1.66675H13.4925ZM6.73333 13.1167C6.48333 13.0917 6.24167 13.2084 6.10833 13.4251C5.975 13.6334 5.975 13.9084 6.10833 14.1251C6.24167 14.3334 6.48333 14.4584 6.73333 14.4251H13.2667C13.5992 14.3917 13.85 14.1076 13.85 13.7751C13.85 13.4334 13.5992 13.1501 13.2667 13.1167H6.73333ZM13.2667 9.31591H6.73333C6.37417 9.31591 6.08333 9.60841 6.08333 9.96675C6.08333 10.3251 6.37417 10.6167 6.73333 10.6167H13.2667C13.625 10.6167 13.9167 10.3251 13.9167 9.96675C13.9167 9.60841 13.625 9.31591 13.2667 9.31591ZM9.22417 5.54175H6.73333V5.55008C6.37417 5.55008 6.08333 5.84175 6.08333 6.20008C6.08333 6.55841 6.37417 6.85008 6.73333 6.85008H9.22417C9.58333 6.85008 9.875 6.55841 9.875 6.19091C9.875 5.83341 9.58333 5.54175 9.22417 5.54175Z" fill="#0E1935"/>
+                            </g>
+                            </svg>
+                         </div>
+                         <p class="mb-0 font-bold fs-14 text-gray2">تاریخچه خرید</p>
+                      </div>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="6" height="8" viewBox="0 0 6 8" fill="none">
+                        <path d="M0.221529 2.9214C0.255431 2.8866 0.383438 2.7378 0.502679 2.6154C1.20175 1.8456 3.02543 0.5856 3.97993 0.201C4.12489 0.1392 4.49138 0.00839993 4.68719 -5.73848e-08C4.87482 -4.91833e-08 5.05368 0.0431999 5.22435 0.1308C5.43712 0.2532 5.60779 0.4458 5.70132 0.6732C5.76152 0.831 5.85504 1.3032 5.85504 1.3116C5.94856 1.8282 6 2.6676 6 3.5952C6 4.479 5.94856 5.2842 5.87199 5.8086C5.86322 5.817 5.7697 6.4038 5.66741 6.6048C5.47979 6.972 5.1133 7.2 4.72109 7.2L4.68719 7.2C4.43176 7.191 3.89459 6.963 3.89459 6.9546C2.99152 6.5694 1.20994 5.3712 0.493911 4.575C0.493911 4.575 0.292255 4.3704 0.204578 4.2426C0.0678027 4.059 -1.67485e-07 3.8316 -1.57545e-07 3.6042C-1.46451e-07 3.3504 0.0765704 3.114 0.221529 2.9214Z" fill="#D6D6D6"/>
+                        </svg>
+                    </a>
+                  </div>
+                </div>
+             </div>
+             <div class="flex-grow-1">
+               <div class="rounded-22 p-4 bg-white shadow6">
+                 <div class="d-flex align-items-center justify-content-between">
+                   <div class="d-flex align-items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+                      <circle cx="5.00488" cy="5" r="5" fill="#27817A"/>
+                      </svg>
+                      <p class="mb-0 fs-14">
+                        <span class="font-bold">سفارش</span> ۱۲۳۴۵۶
+                      </p>
+                   </div>
+                 </div>
+               </div>
+             </div>
+          </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <script src="assets/js/scripts.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
