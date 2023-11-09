@@ -64,6 +64,10 @@ a {
     border-top-right-radius: 5px;
 }
 
+.rounded-7 {
+    border-radius: 7px;
+}
+
 .rounded-9 {
     border-radius: 9px;
 }
@@ -203,6 +207,10 @@ a {
 
 .text-gray2{
     color: #bbbbbb;
+}
+
+.text-black{
+    color: #000000;
 }
 
 /* border */
@@ -399,6 +407,10 @@ a {
     background-color: #ededed;
 }
 
+.bg-gray4{
+    background-color: #CCCCCC;
+}
+
 .bg-white-transparent {
     background: #FFFFFF24;
 }
@@ -519,6 +531,9 @@ a {
 .w-212 {
     width: 212px;
 }
+.w-220 {
+    width: 220px;
+}
 .w-232 {
     width: 232px;
 }
@@ -575,6 +590,10 @@ a {
 
 .h-22 {
     height: 22px;
+}
+
+.h-24 {
+    height: 24px;
 }
 
 .h-30 {
