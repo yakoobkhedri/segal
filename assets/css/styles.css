@@ -51,6 +51,11 @@ a {
 }
 
 /* border-radius */
+
+.special-rounded{
+    border-radius: 21px 5px 21px 21px;
+}
+
 .rounded-3 {
     border-radius: 3px;
 }
@@ -322,6 +327,10 @@ a {
     bottom: 34px;
 }
 
+.bottom-53{
+    bottom: 53px;
+}
+
 .bottom-130 {
     bottom: 130px;
 }
@@ -344,6 +353,10 @@ a {
 
 .right-31 {
     right: 31px;
+}
+
+.right-95 {
+    right: 95px;
 }
 
 .right-159 {
@@ -497,6 +510,10 @@ a {
     width: 36px;
 }
 
+.w-51 {
+    width: 51px;
+}
+
 .w-64 {
     width: 64px;
 }
@@ -611,6 +628,10 @@ a {
 
 .h-49 {
     height: 49px;
+}
+
+.h-51 {
+    height: 51px;
 }
 
 .h-52 {
