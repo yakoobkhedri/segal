@@ -218,7 +218,7 @@ a {
     border-right: 2px dashed lightgray;
 }
 .border-second-5{
-    border: 5px solid #27817A;
+    border: 5px solid #bed9d7;
 }
 
 /* box shadow */
@@ -470,6 +470,7 @@ a {
 }
 
 /* max width */
+
 .max-w-507 {
     max-width: 507px;
     width: 100%;
@@ -987,6 +988,29 @@ a {
 /* login page */
 .loginContent {
     height: 100vh;
+}
+
+/* profile page */
+
+.dashboardSat{
+    transition: all .4s;
+}
+
+.dashboardSat:hover,.dashboardSat.active{
+    background-color: #27817A!important;
+}
+
+.dashboardSat:hover svg path,.dashboardSat.active svg path{
+    fill: white;
+    stroke: white;
+}
+
+.dashboardSat:hover p.text-dark,.dashboardSat.active p.text-dark{
+    color: white!important;
+}
+
+.dashboardSat:hover p.text-gray,.dashboardSat.active p.text-gray{
+    color: #8cbcb8!important;
 }
 
 
