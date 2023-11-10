@@ -218,6 +218,10 @@ a {
     color: #000000;
 }
 
+.text-black2{
+    color: #0E1935;
+}
+
 /* border */
 .border-dash-r-2 {
     border-right: 2px dashed lightgray;
@@ -298,6 +302,10 @@ a {
     top: -16px;
 }
 
+.top-13 {
+    top: 13px;
+}
+
 /* bottom */
 .-bottom-210 {
     bottom: -210px;
@@ -339,21 +347,23 @@ a {
 .right-0{
     right: 0;
 }
+.-right-1 {
+    right: -1px;
+}
+.-right-8 {
+    right: -8px;
+}
+.right-12 {
+    right: 12px;
+}
+.right-31 {
+    right: 31px;
+}
+
 .-right-40 {
     right: -40px;
 }
 
-.-right-8 {
-    right: -8px;
-}
-
-.-right-1 {
-    right: -1px;
-}
-
-.right-31 {
-    right: 31px;
-}
 
 .right-95 {
     right: 95px;
@@ -424,6 +434,10 @@ a {
     background-color: #CCCCCC;
 }
 
+.bg-gray5{
+    background-color: #F0F2F5;
+}
+
 .bg-white-transparent {
     background: #FFFFFF24;
 }
@@ -483,6 +497,11 @@ a {
 }
 
 /* max width */
+
+.max-w-477{
+    max-width: 477px;
+    width: 100%;
+}
 
 .max-w-507 {
     max-width: 507px;
@@ -624,6 +643,10 @@ a {
 
 .h-34 {
     height: 34px;
+}
+
+.h-46 {
+    height: 46px;
 }
 
 .h-49 {
