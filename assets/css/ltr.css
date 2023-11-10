@@ -58,6 +58,11 @@ html {
     left: 50px;
 }
 
+.blogCard .left-54 {
+    right: 73px;
+    left: auto;
+  }
+
 /* margin */
 
 .me-auto {
@@ -218,6 +223,10 @@ img[src='assets/img/pageTitleBg.png']
   #services .ps-4 {
     padding-right: 1.5rem !important;
     padding-left: 0 !important;
+  }
+  #searchbox .pe-5{
+    padding-left: 3rem !important;
+    padding-right: 0 !important;
   }
 
 

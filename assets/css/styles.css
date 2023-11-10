@@ -323,15 +323,29 @@ a {
 .-bottom-210 {
     bottom: -210px;
 }
+.bottom-130 {
+    bottom: 130px;
+}
 
 .-bottom-53 {
     bottom: -53px;
+}
+
+.bottom-53 {
+    bottom: 53px;
 }
 
 .-bottom-39 {
     bottom: -39px;
 }
 
+.bottom-34 {
+    bottom: 34px;
+}
+
+.-bottom-29 {
+    bottom: -29px;
+}
 .-bottom-23 {
     bottom: -23px;
 }
@@ -339,25 +353,12 @@ a {
 .-bottom-19 {
     bottom: -19px;
 }
-
-.bottom-8 {
-    bottom: -8px;
-}
-
 .bottom-9 {
     bottom: 9px;
 }
 
-.bottom-34 {
-    bottom: 34px;
-}
-
-.bottom-53 {
-    bottom: 53px;
-}
-
-.bottom-130 {
-    bottom: 130px;
+.bottom-8 {
+    bottom: -8px;
 }
 
 /* right */
@@ -405,6 +406,10 @@ a {
 
 .left-34 {
     left: 34px;
+}
+
+.left-54 {
+    left: 54px;
 }
 
 .left-87 {
@@ -1114,14 +1119,6 @@ a {
     color: #8cbcb8 !important;
 }
 
-/* blog page */
-
-.blogCard::before {
-    content: url('../img/blogsvg.png');
-    position: absolute;
-    left: 54px;
-    bottom: -42px;
-}
 
 
 @media only screen and (max-width:1400px) {
