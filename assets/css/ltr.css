@@ -205,7 +205,8 @@ html {
 .blogLink svg,
 img[src='assets/img/pageTitleBg.png'],
 .aboutTitle img[src="assets/img/aboutSvg.png"].rotate-0,
-.aboutTitle img[src="assets/img/aboutShape2.png"]
+.aboutTitle img[src="assets/img/aboutShape2.png"],
+#customer img[src="assets/img/customerbg.png"]
 {
     transform: rotateY(180deg);
 }

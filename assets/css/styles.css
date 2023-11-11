@@ -1339,8 +1339,12 @@ a {
         padding-right: 30px;
     }
 
-    #services .h-486 {
+    #services .h-486,#services .h-97 {
         height: auto;
+    }
+
+    #services .h-97{
+        min-height: 97px;
     }
 
     #about {
@@ -1475,6 +1479,9 @@ a {
 }
 
 @media only screen and (max-width:576px) {
+    .banner .swiper-wrapper{
+        height: 178px;
+    }
     #about .-top-77 {
         top: -296px;
     }
