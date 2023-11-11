@@ -7,7 +7,7 @@
   <link href="assets/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
   <link rel='stylesheet' type='text/css' media='screen' href='assets/css/styles.css'>
-  <link rel="stylesheet" href="assets/css/ltr.css">
+  <!-- <link rel="stylesheet" href="assets/css/ltr.css"> -->
   <title>صفحه اصلی</title>
 </head>
 
@@ -20,8 +20,8 @@
         <button type="button" class="btn-close btn-sm position-absolute top-0 start-0 m-4 z-10" data-bs-dismiss="modal"
           aria-label="Close"></button>
         <div class="modal-body d-flex align-items-center gap-3">
-          <img alt="contactImg" src="assets/img/contactmodal.png" class="img-fluid transform1 position-absolute">
-          <div class="col-8 pe-4 me-auto position-relative z-10">
+          <img alt="contactImg" src="assets/img/contactmodal.png" class="img-fluid transform1 position-absolute d-none d-md-block">
+          <div class="col-md-8 pe-4 me-md-auto position-relative z-10">
             <a class="d-flex align-items-center gap-3 mb-4 pb-1">
               <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
                 <g opacity="0.4">
@@ -2322,12 +2322,19 @@
     <div
       class="position-fixed footerMobileMenu shadow4 text-center bg-blur fs-12 fw-bold py-2 -bottom-23 end-0 start-0 rounded-t-42 w-100 z-20 d-lg-none">
       <!-- wave -->
-      <svg class="position-absolute -top-33 end-0 left-14 mx-auto" xmlns="http://www.w3.org/2000/svg" width="151"
-        height="33" viewBox="0 0 151 33" fill="none">
-        <path fill-rule="evenodd" clip-rule="evenodd"
-          d="M150.562 33.0001C144.333 33.0001 138.247 31.1229 133.099 27.6131L108.622 10.9241C88.3809 -2.87653 61.7178 -2.73322 41.6265 11.284L18.4922 27.424C13.2896 31.0538 7.09863 33.0001 0.754883 33.0001H150.562Z"
-          fill="#D9D9D9" />
-      </svg>
+      <svg class="position-absolute -top-32 end-0 left-14 mx-auto" xmlns="http://www.w3.org/2000/svg" width="150" height="33" viewBox="0 0 150 33" fill="none">
+        <g filter="url(#filter0_b_501_83)">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M149.808 32.3286C143.578 32.3286 137.492 30.4514 132.344 26.9416L107.867 10.2526C87.626 -3.54804 60.9629 -3.40473 40.8716 10.6125L17.7373 26.7525C12.5347 30.3823 6.34375 32.3286 0 32.3286H149.808Z" fill="white" fill-opacity="0.6"/>
+        </g>
+        <defs>
+        <filter id="filter0_b_501_83" x="-11" y="-11" width="171.808" height="54.3285" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+        <feGaussianBlur in="BackgroundImageFix" stdDeviation="5.5"/>
+        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_501_83"/>
+        <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_501_83" result="shape"/>
+        </filter>
+        </defs>
+        </svg>
       <!--  -->
       <div class="d-flex align-items-center justify-content-between container h-100">
         <a class="text-gray">

@@ -307,6 +307,10 @@ a {
     top: -32.5px;
 }
 
+.-top-32 {
+    top: -32.1px;
+}
+
 .-top-30 {
     top: -30px;
 }
@@ -937,6 +941,9 @@ a {
 .aboutSwiper .swiper-pagination,.aboutSwiper .swiper-pagination2,.aboutSwiper .swiper-pagination3,.aboutSwiper .swiper-pagination4{
     top: auto!important;
     bottom: -11px;
+}
+.modal {
+    backdrop-filter: blur(3px);
 }
 
 #contactModal .modal-dialog {
