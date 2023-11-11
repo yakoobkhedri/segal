@@ -85,7 +85,13 @@ html {
 .end-0 {
     left: 0 !important;
 }
-
+.aboutTitle img[src="assets/img/aboutSvg.png"].rotate-0{
+    left: auto!important;
+}
+.aboutTitle.left-27 {
+    left: auto!important;
+    right: 33px;
+}
 .serviceMobileSize img[alt='shape2']{
     right: 0!important;
     left: auto!important;
@@ -197,9 +203,14 @@ html {
 .title-line,
 #pagination svg,
 .blogLink svg,
-img[src='assets/img/pageTitleBg.png']
+img[src='assets/img/pageTitleBg.png'],
+.aboutTitle img[src="assets/img/aboutSvg.png"].rotate-0
 {
     transform: rotateY(180deg);
+}
+
+.aboutTitle img[src="assets/img/aboutSvg.png"].rotate-y-180{
+    transform: rotate(0deg);
 }
 
 .transform1 {

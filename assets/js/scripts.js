@@ -129,3 +129,33 @@ var about = new Swiper(".about", {
         el: ".swiper-pagination",
     },
 });
+
+var about2 = new Swiper(".about2", {
+    loop: true,
+    autoplay:true,
+    spaceBetween: 24,
+    slidesPerView: 1,
+    pagination: {
+        el: ".swiper-pagination2",
+    },
+});
+
+var about3 = new Swiper(".about3", {
+    loop: true,
+    autoplay:true,
+    spaceBetween: 24,
+    slidesPerView: 1,
+    pagination: {
+        el: ".swiper-pagination3",
+    },
+});
+
+var about4 = new Swiper(".about4", {
+    loop: true,
+    autoplay:true,
+    spaceBetween: 24,
+    slidesPerView: 1,
+    pagination: {
+        el: ".swiper-pagination4",
+    },
+});

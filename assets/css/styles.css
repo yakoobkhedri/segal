@@ -283,6 +283,10 @@ a {
     top: -103px;
 }
 
+.-top-83 {
+    top: -83px;
+}
+
 .-top-77 {
     top: -77px;
 }
@@ -402,6 +406,10 @@ a {
 
 .left-14 {
     left: 14px;
+}
+
+.left-27 {
+    left: 27px;
 }
 
 .left-34 {
@@ -647,6 +655,10 @@ a {
     width: 362px;
 }
 
+.w-407 {
+    width: 407px;
+}
+
 .w-417 {
     width: 417px;
 }
@@ -727,6 +739,10 @@ a {
 
 .h-97 {
     height: 97px;
+}
+
+.h-131 {
+    height: 131px;
 }
 
 .h-158 {
@@ -836,7 +852,10 @@ a {
 
 .scale-y-17 {
     transform: scaleY(1.17);
-    ;
+}
+
+.rotate-y-180{
+    transform: rotateY(180deg);
 }
 
 /* global styles */
@@ -913,6 +932,11 @@ a {
 .swiper-pagination-bullet-active,
 .swiper-pagination4.swiper-pagination-bullet-active {
     background: linear-gradient(74.18deg, #27817A 2.59%, #27817A 100%) !important;
+}
+
+.aboutSwiper .swiper-pagination,.aboutSwiper .swiper-pagination2,.aboutSwiper .swiper-pagination3,.aboutSwiper .swiper-pagination4{
+    top: auto!important;
+    bottom: -11px;
 }
 
 #contactModal .modal-dialog {
@@ -1457,6 +1481,11 @@ a {
 
     .w-362 .-mt-12 {
         margin-top: -31px;
+    }
+    .aboutTitle{
+        width: 300px;
+        font-size: 14px;
+        top: -56px !important;
     }
 
 }
