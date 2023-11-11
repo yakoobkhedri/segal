@@ -204,12 +204,13 @@ html {
 #pagination svg,
 .blogLink svg,
 img[src='assets/img/pageTitleBg.png'],
-.aboutTitle img[src="assets/img/aboutSvg.png"].rotate-0
+.aboutTitle img[src="assets/img/aboutSvg.png"].rotate-0,
+.aboutTitle img[src="assets/img/aboutShape2.png"]
 {
     transform: rotateY(180deg);
 }
 
-.aboutTitle img[src="assets/img/aboutSvg.png"].rotate-y-180{
+.aboutTitle img[src="assets/img/aboutSvg.png"].rotate-y-180,.aboutTitle.left-27 img[src="assets/img/aboutShape2.png"]{
     transform: rotate(0deg);
 }
 
