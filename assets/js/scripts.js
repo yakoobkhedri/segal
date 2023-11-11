@@ -48,7 +48,7 @@ languageLi.addEventListener('mouseover', function() {
 // swiper
 var banner = new Swiper(".banner", {
     loop: true,
-    // autoplay:true,
+    autoplay:true,
     slidesPerView: 1,
     spaceBetween: 0,
     pagination: {

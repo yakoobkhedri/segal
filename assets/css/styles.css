@@ -268,6 +268,10 @@ a {
     box-shadow: 0px 0px 43.01886749267578px 0px #0000001A;
 }
 
+.shadow9{
+    box-shadow: 0px 0px 35.225807189941406px 0px #00000014;
+}
+
 
 /* top */
 
@@ -1061,6 +1065,10 @@ a {
 .dropdown-toggle::after {
     content: url('../img/Vector.svg');
     border-top: 0;
+}
+
+.langMobile .dropdown-toggle::after{
+    content: none;
 }
 
 .dropdown-menu {
