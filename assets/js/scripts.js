@@ -46,7 +46,7 @@ languageLi.addEventListener('mouseover', function() {
 })
 
 // swiper
-var models = new Swiper(".banner", {
+var banner = new Swiper(".banner", {
     loop: true,
     autoplay:true,
     slidesPerView: 1,
@@ -118,5 +118,14 @@ var customer = new Swiper(".customer", {
     },
     pagination: {
         el: ".swiper-pagination4",
+    },
+});
+var about = new Swiper(".about", {
+    loop: true,
+    autoplay:true,
+    spaceBetween: 24,
+    slidesPerView: 1,
+    pagination: {
+        el: ".swiper-pagination",
     },
 });
