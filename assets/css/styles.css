@@ -85,6 +85,10 @@ a {
     border-radius: 12px;
 }
 
+.rounded-13 {
+    border-radius: 13px;
+}
+
 .rounded-14 {
     border-radius: 14px;
 }
@@ -623,6 +627,10 @@ a {
     width: 133px;
 }
 
+.w-138 {
+    width: 138px;
+}
+
 .w-150 {
     width: 150px;
 }
@@ -731,6 +739,10 @@ a {
 
 .h-52 {
     height: 52px;
+}
+
+.h-55 {
+    height: 55px;
 }
 
 .h-61 {
@@ -960,6 +972,10 @@ a {
 
 #contactModal .modal-content {
     height: 354px;
+}
+
+#addressModal .modal-dialog {
+    max-width: 1007px;
 }
 
 .pagination a:hover,

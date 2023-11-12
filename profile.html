@@ -13,6 +13,74 @@
 
 <body>
 
+   <!-- address Modal -->
+   <div class="modal fade" id="addressModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content rounded-27">
+        <button type="button" class="btn-close btn-sm position-absolute top-0 start-0 m-4 z-10" data-bs-dismiss="modal"
+          aria-label="Close"></button>
+        <div class="modal-body p-4">
+           <div class="d-flex align-items-center gap-2 border-bottom pb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+              <path d="M23.096 5.47091L16.596 3.30425H16.5202C16.4698 3.29918 16.4189 3.29918 16.3685 3.30425H15.9027L9.74935 5.41675L3.59602 3.30425C3.4331 3.25053 3.25976 3.23626 3.09025 3.26263C2.92074 3.289 2.75992 3.35524 2.62102 3.45591C2.48101 3.5556 2.36672 3.68716 2.28761 3.83975C2.20849 3.99233 2.16681 4.16154 2.16602 4.33341V19.5001C2.16543 19.7272 2.23624 19.9487 2.36843 20.1334C2.50062 20.3181 2.68751 20.4566 2.90269 20.5292L9.40269 22.6959C9.62092 22.7671 9.85612 22.7671 10.0744 22.6959L16.2494 20.6376L22.4027 22.7501C22.5177 22.7657 22.6343 22.7657 22.7494 22.7501C22.9759 22.7533 23.197 22.6808 23.3777 22.5442C23.5177 22.4446 23.632 22.313 23.7111 22.1604C23.7902 22.0078 23.8319 21.8386 23.8327 21.6667V6.50008C23.8333 6.27297 23.7625 6.05141 23.6303 5.86673C23.4981 5.68205 23.3112 5.54359 23.096 5.47091ZM8.66602 20.1609L4.33269 18.7201V5.83925L8.66602 7.28008V20.1609ZM15.166 18.7201L10.8327 20.1609V7.28008L15.166 5.83925V18.7201ZM21.666 20.1609L17.3327 18.7201V5.83925L21.666 7.28008V20.1609Z" fill="#27817A"/>
+              </svg>
+              <p class="fs-18 mb-0">ثبت آدرس <span class="font-bold">جدید</span></p>
+           </div>
+           <!-- form -->
+           <form>
+             <div class="row mt-1 g-4 border-bottom pb-4">
+              <div class="col-12">
+                <label class="font-bold">آدرس پستی</label>
+                <input class="rounded-13 bg-gray2 border-0 outline-none h-55 d-block w-100 px-4 mt-3" placeholder="خ. شریعتی، نرسیده به بیمارستان تخصصی و فوق تخصصی تخصصی کیان، خ. پور مشکانی">
+              </div>
+              <div class="col-lg-6">
+                <label class="font-bold">استان</label>
+               <select class="rounded-13 bg-gray2 border-0 outline-none h-55 d-block w-100 px-4 mt-3">
+                  <option>تهران</option>
+                  <option>کرمان</option>
+                  <option>اصفهان</option>
+                </select>
+              </div>
+              <div class="col-lg-6">
+                <label class="font-bold">شهر</label>
+               <select class="rounded-13 bg-gray2 border-0 outline-none h-55 d-block w-100 px-4 mt-3">
+                  <option>تهران</option>
+                  <option>کرمان</option>
+                  <option>اصفهان</option>
+                </select>
+              </div>
+              <div class="col-lg-3">
+                <label class="font-bold">پلاک</label>
+                <input class="rounded-13 bg-gray2 border-0 outline-none h-55 d-block w-100 px-4 mt-3" placeholder="شماره پلاک را وارد کنید">
+              </div>
+              <div class="col-lg-3">
+                <label class="font-bold">واحد</label>
+                <input class="rounded-13 bg-gray2 border-0 outline-none h-55 d-block w-100 px-4 mt-3" value="1">
+              </div>
+              <div class="col-lg-6">
+                <label class="font-bold">کد پستی</label>
+                <input class="rounded-13 bg-gray2 border-0 outline-none h-55 d-block w-100 px-4 mt-3" placeholder="کدپستی خود را وارد کنید">
+              </div>
+              <div class="col-lg-6">
+                <label class="font-bold">نام و نام خانوادگی گیرنده</label>
+                <input class="rounded-13 bg-gray2 border-0 outline-none h-55 d-block w-100 px-4 mt-3" placeholder="نام و نام خانوادگی را وارد کنید">
+              </div>
+              <div class="col-lg-6">
+                <label class="font-bold">شماره موبایل گیرنده</label>
+                <input class="rounded-13 bg-gray2 border-0 outline-none h-55 d-block w-100 px-4 mt-3" placeholder="شماره موبایل را وارد کنید">
+              </div>
+             </div>
+            <button class="d-flex border-0 w-138 mt-4 me-auto fs-14 align-items-center justify-content-center gap-2 rounded-14 bg-gradient-main py-3">
+                <p class="mb-0 fw-bold text-white">ثبت آدرس</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="6" height="8" viewBox="0 0 6 8" fill="none">
+                  <path opacity="0.6" d="M0.221529 3.3213C0.255431 3.2865 0.383438 3.1377 0.502679 3.0153C1.20175 2.2455 3.02543 0.985502 3.97993 0.600902C4.12489 0.539102 4.49138 0.408302 4.68719 0.399902C4.87482 0.399902 5.05368 0.443102 5.22435 0.530702C5.43712 0.653102 5.60779 0.845702 5.70132 1.0731C5.76152 1.2309 5.85504 1.7031 5.85504 1.7115C5.94856 2.2281 6 3.0675 6 3.9951C6 4.8789 5.94856 5.6841 5.87199 6.2085C5.86322 6.2169 5.7697 6.8037 5.66741 7.0047C5.47979 7.3719 5.1133 7.5999 4.72109 7.5999L4.68719 7.5999C4.43176 7.5909 3.89459 7.3629 3.89459 7.3545C2.99152 6.9693 1.20994 5.7711 0.493911 4.9749C0.493911 4.9749 0.292255 4.7703 0.204578 4.6425C0.0678027 4.4589 -1.67485e-07 4.2315 -1.57545e-07 4.0041C-1.46451e-07 3.7503 0.0765704 3.5139 0.221529 3.3213Z" fill="white"/>
+                  </svg>
+            </button>
+           </form>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- shape -->
   <img alt="shape" src="assets/img/shape1.png" class="img-fluid position-absolute start-0 top-0 -z-1">
@@ -1428,7 +1496,7 @@
                         <p class="mb-0 fw-bold">آدرس ارسال:</p>
                         <p class="mb-0">تهران، شریعتی، نبش کودکان غزه، پلاک ۵۰ - عطا حیدری</p>
                       </div>
-                      <div class="d-flex align-items-center gap-1">
+                      <div data-bs-toggle="modal" data-bs-target="#addressModal" class="d-flex align-items-center gap-1">
                         <a class="d-block">
                           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99967 1.66675C6.31801 1.66675 3.33301 4.70508 3.33301 8.45258C3.33301 12.1709 5.46051 16.5109 8.78051 18.0617C9.16211 18.2404 9.57831 18.333 9.99967 18.333C10.421 18.333 10.8372 18.2404 11.2188 18.0617C14.5388 16.5101 16.6663 12.1709 16.6663 8.45341C16.6663 4.70425 13.6813 1.66675 9.99967 1.66675ZM9.99967 5.62508C10.1654 5.62508 10.3244 5.69093 10.4416 5.80814C10.5588 5.92535 10.6247 6.08432 10.6247 6.25008V7.70842H12.083C12.2488 7.70842 12.4077 7.77426 12.5249 7.89147C12.6422 8.00868 12.708 8.16765 12.708 8.33342C12.708 8.49918 12.6422 8.65815 12.5249 8.77536C12.4077 8.89257 12.2488 8.95842 12.083 8.95842H10.6247V10.4167C10.6247 10.5825 10.5588 10.7415 10.4416 10.8587C10.3244 10.9759 10.1654 11.0417 9.99967 11.0417C9.83391 11.0417 9.67494 10.9759 9.55773 10.8587C9.44052 10.7415 9.37467 10.5825 9.37467 10.4167V8.95842H7.91634C7.75058 8.95842 7.59161 8.89257 7.4744 8.77536C7.35719 8.65815 7.29134 8.49918 7.29134 8.33342C7.29134 8.16765 7.35719 8.00868 7.4744 7.89147C7.59161 7.77426 7.75058 7.70842 7.91634 7.70842H9.37467V6.25008C9.37467 6.08432 9.44052 5.92535 9.55773 5.80814C9.67494 5.69093 9.83391 5.62508 9.99967 5.62508Z" fill="#27817A"/>
