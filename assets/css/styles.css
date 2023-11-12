@@ -32,6 +32,10 @@ a {
     outline: none;
 }
 
+.resize-none{
+    resize: none;
+}
+
 .cursor-pointer {
     cursor: pointer;
 }
@@ -54,12 +58,20 @@ a {
     overflow-x: hidden;
 }
 
+/* border dash */
+.border-dash{
+    border: 2px dashed lightgray;
+}
+
 /* border-radius */
 
 .special-rounded {
     border-radius: 21px 5px 21px 21px;
 }
 
+.special-rounded2{
+    border-radius: 21px 50px 50px 21px;
+}
 .rounded-3 {
     border-radius: 3px;
 }
@@ -226,6 +238,10 @@ a {
     color: #bbbbbb;
 }
 
+.text-lightgray{
+    color: lightgray;
+}
+
 .text-black {
     color: #000000;
 }
@@ -284,7 +300,9 @@ a {
     box-shadow: 0px 0px 43.01886749267578px 0px #0000000D;
 }
 
-
+.shadow11{
+    box-shadow: -11.199999809265137px 8.800000190734863px 64px 0px #4837AB82;
+}
 
 /* top */
 
@@ -312,6 +330,10 @@ a {
     top: -69px;
 }
 
+.-top-60 {
+    top: -60px;
+}
+
 .-top-36 {
     top: -36px;
 }
@@ -336,12 +358,24 @@ a {
     top: -27px;
 }
 
+.-top-17 {
+    top: -17px;
+}
+
 .-top-16 {
     top: -16px;
 }
 
 .top-13 {
     top: 13px;
+}
+
+.-top-12 {
+    top: -12px;
+}
+
+.-top-9 {
+    top: -9px;
 }
 
 /* bottom */
@@ -411,9 +445,12 @@ a {
     right: -40px;
 }
 
+.right-93 {
+    right: 93px;
+}
 
-.right-95 {
-    right: 95px;
+.right-122 {
+    right: 122px;
 }
 
 .right-159 {
@@ -513,6 +550,10 @@ a {
     background-color: #F0F2F5;
 }
 
+.bg-gray6{
+    background-color: #F5F5FB;
+}
+
 .bg-white-transparent {
     background: #FFFFFF24;
 }
@@ -584,6 +625,7 @@ a {
 }
 
 /* width */
+
 .w-22 {
     width: 22px;
 }
@@ -602,6 +644,10 @@ a {
 
 .w-36 {
     width: 36px;
+}
+
+.w-48 {
+    width: 48px;
 }
 
 .w-51 {
@@ -644,6 +690,10 @@ a {
     width: 150px;
 }
 
+.w-179 {
+    width: 179px;
+}
+
 .w-190 {
     width: 190px;
 }
@@ -672,12 +722,20 @@ a {
     width: 285px;
 }
 
+.w-288 {
+    width: 288px;
+}
+
 .w-316 {
     width: 316px;
 }
 
 .w-326 {
     width: 326px;
+}
+
+.w-332 {
+    width: 332px;
 }
 
 .w-362 {
@@ -704,6 +762,10 @@ a {
 
 .h-11 {
     height: 11px;
+}
+
+.h-12 {
+    height: 12px;
 }
 
 .h-15 {
@@ -754,6 +816,10 @@ a {
     height: 55px;
 }
 
+.h-58 {
+    height: 58px;
+}
+
 .h-61 {
     height: 61px;
 }
@@ -772,6 +838,10 @@ a {
 
 .h-97 {
     height: 97px;
+}
+
+.h-127 {
+    height: 127px;
 }
 
 .h-131 {
