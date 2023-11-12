@@ -984,6 +984,10 @@ a {
     font-weight: 900;
 }
 
+input[type="number"] {
+    -moz-appearance: textfield;
+  }
+
 /* header */
 .bg-header1 {
     background-image: url('../img/bg-header1.png');
