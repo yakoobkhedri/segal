@@ -1441,6 +1441,14 @@ input[type="number"] {
         top: -15.5px;
     }
 
+    #description .-top-60{
+        top: 0;
+    }
+
+    #description >div:last-child,#comment .flex-grow-1{
+        width: 100%;
+    }
+
     footer .footerMobileMenu svg path {
         fill: #ffffffbd;
     }
@@ -1530,7 +1538,7 @@ input[type="number"] {
         margin-bottom: 193px !important;
     }
 
-    footer .copyRight2 {
+    footer .copyRight2,#comment button,#comment .secureCode {
         width: 100%;
     }
 }
