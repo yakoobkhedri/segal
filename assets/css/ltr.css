@@ -92,6 +92,14 @@ html {
     left: auto!important;
     right: 33px;
 }
+#comment .right-122 {
+    left: 122px;
+    right: auto;
+  }
+  .dropdown-menu::before {
+    right: 111px !important;
+    left: auto!important;
+  }
 .serviceMobileSize img[alt='shape2']{
     right: 0!important;
     left: auto!important;
