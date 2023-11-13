@@ -159,3 +159,15 @@ var about4 = new Swiper(".about4", {
         el: ".swiper-pagination4",
     },
 });
+var smallImgs = new Swiper(".smallImgs", {
+    spaceBetween: 16,
+    slidesPerView: 3,
+    freeMode: true,
+    watchSlidesProgress: true,
+});
+var gallery = new Swiper(".gallery", {
+    spaceBetween: 10,
+    thumbs: {
+        Swiper: Swiper,
+    },
+});
