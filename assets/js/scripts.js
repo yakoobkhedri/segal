@@ -60,7 +60,7 @@ var category = new Swiper(".category", {
     spaceBetween: 20,
     autoplay:true,
     breakpoints:{
-     768:{
+     992:{
         slidesPerView: 3,
      },
      992:{
@@ -169,5 +169,31 @@ var gallery = new Swiper(".gallery", {
     spaceBetween: 10,
     thumbs: {
         Swiper: Swiper,
+    },
+});
+var specialProduct = new Swiper(".specialProduct", {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    autoplay:true,
+    breakpoints:{
+        576:{
+            slidesPerView: 2,
+         },
+     992:{
+        slidesPerView: 3,
+     },
+     1200:{
+        slidesPerView: 4,
+     },
+     1400:{
+        slidesPerView: 5,
+     },
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+        el: ".swiper-pagination2",
     },
 });
