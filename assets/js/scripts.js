@@ -197,3 +197,19 @@ var specialProduct = new Swiper(".specialProduct", {
         el: ".swiper-pagination2",
     },
 });
+
+// filter
+
+let filterBtn = Array.from(document.getElementsByClassName('filterBtn'));
+let filterContent = Array.from(document.getElementsByClassName('filterContent'));
+
+filterBtn.forEach((item) => {
+  item.addEventListener('click', function () {
+    filterBtn.forEach((items) => {
+      items.nextElementSibling.classList.remove('active');
+      items.querySelector('svg').classList.remove('active');
+    })
+    item.nextElementSibling.classList.add('active');
+    item.querySelector('svg').classList.add('active');
+  })
+})

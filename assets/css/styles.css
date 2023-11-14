@@ -261,10 +261,10 @@ a {
     color: #1E2D48;
 }
 
-.text-second-gradient{
+.text-second-gradient {
     background: -webkit-linear-gradient(#5B6CCC 2.59%, #4834AC 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .text-gray {
@@ -374,6 +374,10 @@ a {
 
 .-top-36 {
     top: -36px;
+}
+
+.-top-34 {
+    top: -34px;
 }
 
 .top-34 {
@@ -577,6 +581,10 @@ a {
 
 .bg-main3 {
     background-color: #ececf7;
+}
+
+.bg-main4 {
+    background-color: #c9c8e9;
 }
 
 .bg-second {
@@ -899,6 +907,10 @@ a {
     height: 55px;
 }
 
+.h-57 {
+    height: 57px;
+}
+
 .h-58 {
     height: 58px;
 }
@@ -1025,6 +1037,11 @@ a {
 
 .mb-235 {
     margin-bottom: 235px;
+}
+
+/* transition */
+.transition{
+    transition: all .4s;
 }
 
 /* transform */
@@ -1169,20 +1186,20 @@ a {
 
 .nav-pills .nav-link.active::after {
     background-color: #4636a8;
-  content: "";
-  width: 18px;
-  height: 18px;
-  bottom: -22px;
-  border-radius: 5px;
-  position: absolute;
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg);
-  -o-transition: all 0.2s ease 0s;
-  transition: all 0.2s ease 0s;
-  -webkit-transition: all 0.2s ease 0s;
-  -moz-transition: all 0.2s ease 0s;
+    content: "";
+    width: 18px;
+    height: 18px;
+    bottom: -22px;
+    border-radius: 5px;
+    position: absolute;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -o-transition: all 0.2s ease 0s;
+    transition: all 0.2s ease 0s;
+    -webkit-transition: all 0.2s ease 0s;
+    -moz-transition: all 0.2s ease 0s;
 }
 
 .nav-pills .nav-link.active {
@@ -1191,13 +1208,29 @@ a {
     font-weight: 600;
     opacity: 100%;
 }
+
 .nav-pills .nav-link path {
     fill: white;
- }
-.nav-pills .nav-link.active path {
-   fill: #27817a;
 }
 
+.nav-pills .nav-link.active path {
+    fill: #27817a;
+}
+
+.filterContent.active {
+    max-height: 1000px;
+    padding: 10px 0 !important;
+}
+
+.filterContent {
+    max-height: 0;
+    padding: 0 !important;
+    transition: all .4s;
+}
+
+.filterBtn svg.active {
+    transform: rotate(180deg);
+  }
 
 .modal {
     backdrop-filter: blur(3px);
@@ -1767,8 +1800,8 @@ input[type="number"] {
     }
 
     .nav-pills .nav-link.active::after {
-      width: 0;
-      height: 0;
+        width: 0;
+        height: 0;
     }
 }
 
