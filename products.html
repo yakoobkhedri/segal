@@ -1003,25 +1003,25 @@
         <!-- filter nav -->
         <div class="position-relative h-114">
           <!-- bg -->
-          <img alt="bg" src="assets/img/filterMenuBg.png" class="img-fluid -z-1">
-          <img alt="bg" src="assets/img/filterbg.png" class="img-fluid -z-1 position-absolute w-98 end-0 start-0 transform2">
+          <img alt="bg" src="assets/img/filterMenuBg.png" class="img-fluid -z-1 d-none d-lg-inline-block">
+          <img alt="bg" src="assets/img/filterbg.png" class="img-fluid d-none d-lg-inline-block -z-1 position-absolute w-98 end-0 start-0 transform2">
           <!--  -->
-          <div class="d-flex align-items-center gap-4 position-absolute top-0 mt-3 mt-xl-4 pt-xxl-2 w-100">
+          <div class="d-flex flex-column flex-lg-row align-items-center gap-4 position-absolute top-0 mt-3 mt-xl-4 pt-xxl-2 w-100">
             <div class="d-flex align-items-center flex-shrink-0 gap-3 me-xl-3 me-1 position-relative -top-5">
-              <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55" fill="none">
+              <svg class="d-none d-lg-block" xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55" fill="none">
                 <path opacity="0.5" d="M9.16709 22.1693C9.16709 12.4572 16.8625 4.58301 26.3546 4.58301C35.8467 4.58301 43.5421 12.4572 43.5421 22.1693C43.5504 24.6321 43.0455 27.0698 42.0594 29.3267C41.0734 31.5836 39.628 33.6103 37.8152 35.2776C36.6465 36.3478 35.7779 37.143 35.1638 37.7205C34.8526 38.0127 34.547 38.3106 34.2471 38.6143L34.1898 38.6761L34.1715 38.699C33.6283 39.382 33.5115 39.5584 33.4427 39.7188C33.374 39.8793 33.3213 40.0855 33.1838 40.9563C33.131 41.3001 33.1242 41.8868 33.1242 43.4886V43.5574C33.1242 44.4947 33.1242 45.3036 33.0669 45.9659C33.005 46.6672 32.8675 47.3638 32.4985 48.017C32.09 48.7437 31.4972 49.35 30.7798 49.7747C30.1427 50.1528 29.4621 50.2926 28.7769 50.3568C28.1283 50.4163 27.3377 50.4163 26.421 50.4163H26.2881C25.3715 50.4163 24.5808 50.4163 23.9323 50.3568C23.2448 50.2926 22.5665 50.1505 21.9271 49.7747C21.2105 49.3497 20.6185 48.7434 20.2106 48.017C19.844 47.3638 19.7065 46.6695 19.6423 45.9659C19.5827 45.3013 19.5827 44.4947 19.5827 43.5574V43.4886C19.5827 41.8868 19.5781 41.3001 19.5231 40.9563C19.3856 40.0855 19.3375 39.8793 19.2665 39.7188C19.1977 39.5584 19.0808 39.382 18.5377 38.6968L18.5194 38.6738C18.2011 38.3488 17.8764 38.0302 17.5454 37.7182C16.9313 37.1453 16.0627 36.3478 14.894 35.2753C13.0815 33.6083 11.6362 31.5819 10.6502 29.3254C9.66418 27.0689 9.15908 24.6318 9.16709 22.1693Z" fill="white"/>
                 <path d="M29.987 45.0884H22.7225C22.7293 45.3107 22.7385 45.5032 22.7545 45.6797C22.7958 46.1609 22.8691 46.3328 22.9173 46.4199C23.0533 46.6624 23.2509 46.8647 23.4902 47.0065C23.575 47.0546 23.7445 47.1303 24.2143 47.1715C24.7048 47.2174 25.351 47.2197 26.3548 47.2197C27.3562 47.2197 28.0048 47.2197 28.4952 47.1738C28.9627 47.128 29.1345 47.0546 29.2193 47.0065C29.4586 46.8647 29.6562 46.6624 29.7923 46.4199C29.8381 46.3328 29.9114 46.1586 29.9527 45.6797C29.9687 45.5055 29.9802 45.3107 29.987 45.0884ZM28.8985 18.7388C29.602 19.2522 29.7648 20.2513 29.2629 20.9686L26.5633 24.8369H29.7762C30.0653 24.8383 30.3482 24.9201 30.5935 25.0731C30.8387 25.226 31.0366 25.4442 31.165 25.7032C31.2967 25.965 31.3554 26.2576 31.3349 26.55C31.3143 26.8424 31.2152 27.1238 31.0481 27.3647L26.5839 33.7561C26.4674 33.9263 26.318 34.0713 26.1443 34.1826C25.9707 34.294 25.7765 34.3693 25.5733 34.4041C25.37 34.4389 25.1618 34.4326 24.9611 34.3855C24.7603 34.3383 24.5711 34.2513 24.4045 34.1297C24.0659 33.8782 23.8385 33.5048 23.7705 33.0886C23.7024 32.6724 23.7992 32.246 24.0402 31.8999L26.7398 28.0315H23.5268C23.2376 28.0299 22.9544 27.9478 22.7091 27.7944C22.4639 27.641 22.2661 27.4224 22.1381 27.163C22.0068 26.9014 21.9483 26.6093 21.9689 26.3174C21.9894 26.0254 22.0883 25.7444 22.255 25.5038L26.7191 19.1101C26.8356 18.9399 26.9851 18.7948 27.1587 18.6835C27.3323 18.5722 27.5265 18.4969 27.7298 18.4621C27.933 18.4272 28.1412 18.4336 28.342 18.4807C28.5427 18.5279 28.732 18.6149 28.8985 18.7365V18.7388Z" fill="white"/>
                 </svg>
-                <div class="text-white">
+                <div class="text-white black-lg">
                   <p class="font-bold fs-18 mb-0">لوازم الکترونیک</p>
-                  <p class="fs-14 text-white-50 mb-0">۳۵۶۰ محصول</p>
+                  <p class="fs-14 mb-0 text-center text-lg-end">۳۵۶۰ محصول</p>
                 </div>
             </div>
-            <div class="rounded-13 bg-white flex-grow-1 gap-5 h-57 position-relative -top-5 w-100 d-flex align-items-center px-3 ms-3">
+            <div class="rounded-13 bg-white flex-wrap flex-grow-1 gap-xl-5 gap-2 h-57 position-relative -top-5 w-100 d-flex align-items-center px-3 ms-3">
               <!-- filter nav -->
-               <div class="d-flex align-items-center gap-4">
-                  <p class="fs-14 fw-bold mb-0 ms-3">مرتب سازی بر اساس:</p>
-                  <div class="d-flex align-items-center gap-4 fs-14 filter-nav">
+               <div class="d-flex align-items-center gap-xl-4">
+                  <p class="fs-14 fw-bold mb-0 ms-3 d-none d-sm-block">مرتب سازی بر اساس:</p>
+                  <div class="d-flex align-items-center gap-xl-4 gap-lg-2 gap-3 fs-14 filter-nav">
                     <a class="active text-gray">جدیدترین</a>
                     <a class="text-gray">گرانترین</a>
                     <a class="text-gray">محبوب ترین</a>
@@ -1029,7 +1029,7 @@
                   </div>
                </div>
                <!-- line -->
-               <svg xmlns="http://www.w3.org/2000/svg" width="1" height="37" viewBox="0 0 1 37" fill="none">
+               <svg class="d-none d-lg-block" xmlns="http://www.w3.org/2000/svg" width="1" height="37" viewBox="0 0 1 37" fill="none">
                 <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499998" y2="37" stroke="black"/>
                 </svg>
                <!-- search -->
@@ -1045,50 +1045,94 @@
           </div>
         </div>
         <!-- product number -->
-        <div class="position-relative h-114 mt-3">
+        <div class="position-relative h-114 mt-lg-3 mt-5 productNum">
           <!-- bg -->
-          <img alt="bg" src="assets/img/productsNumBg.png" class="img-fluid -z-1">
+          <img alt="bg" src="assets/img/productsNumBg.png" class="img-fluid -z-1 d-none d-md-block">
           <!--  -->
-          <div class="d-flex align-items-center gap-4 position-absolute top-0 mt-3 mt-xl-4 pt-xxl-2 w-100">
-            <div class="d-flex align-items-center flex-shrink-0 gap-3 me-xl-3 me-1 position-relative -top-5">
-              <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55" fill="none">
+          <div class="d-flex align-items-center flex-column flex-md-row gap-4 position-absolute top-0 mt-3 mt-xl-4 pt-xxl-3 w-100">
+            <!-- svg -->
+              <img alt="svg" src="assets/img/productsNumsvg.png" class="img-fluid position-absolute -top-23">
+            <!--  -->
+            <div class="d-flex align-items-center flex-shrink-0 gap-3 me-xl-3 me-lg-1 me-3 position-relative -top-36">
+              <svg class="d-none d-lg-block" xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55" fill="none">
                 <path opacity="0.5" d="M9.16709 22.1693C9.16709 12.4572 16.8625 4.58301 26.3546 4.58301C35.8467 4.58301 43.5421 12.4572 43.5421 22.1693C43.5504 24.6321 43.0455 27.0698 42.0594 29.3267C41.0734 31.5836 39.628 33.6103 37.8152 35.2776C36.6465 36.3478 35.7779 37.143 35.1638 37.7205C34.8526 38.0127 34.547 38.3106 34.2471 38.6143L34.1898 38.6761L34.1715 38.699C33.6283 39.382 33.5115 39.5584 33.4427 39.7188C33.374 39.8793 33.3213 40.0855 33.1838 40.9563C33.131 41.3001 33.1242 41.8868 33.1242 43.4886V43.5574C33.1242 44.4947 33.1242 45.3036 33.0669 45.9659C33.005 46.6672 32.8675 47.3638 32.4985 48.017C32.09 48.7437 31.4972 49.35 30.7798 49.7747C30.1427 50.1528 29.4621 50.2926 28.7769 50.3568C28.1283 50.4163 27.3377 50.4163 26.421 50.4163H26.2881C25.3715 50.4163 24.5808 50.4163 23.9323 50.3568C23.2448 50.2926 22.5665 50.1505 21.9271 49.7747C21.2105 49.3497 20.6185 48.7434 20.2106 48.017C19.844 47.3638 19.7065 46.6695 19.6423 45.9659C19.5827 45.3013 19.5827 44.4947 19.5827 43.5574V43.4886C19.5827 41.8868 19.5781 41.3001 19.5231 40.9563C19.3856 40.0855 19.3375 39.8793 19.2665 39.7188C19.1977 39.5584 19.0808 39.382 18.5377 38.6968L18.5194 38.6738C18.2011 38.3488 17.8764 38.0302 17.5454 37.7182C16.9313 37.1453 16.0627 36.3478 14.894 35.2753C13.0815 33.6083 11.6362 31.5819 10.6502 29.3254C9.66418 27.0689 9.15908 24.6318 9.16709 22.1693Z" fill="white"/>
                 <path d="M29.987 45.0884H22.7225C22.7293 45.3107 22.7385 45.5032 22.7545 45.6797C22.7958 46.1609 22.8691 46.3328 22.9173 46.4199C23.0533 46.6624 23.2509 46.8647 23.4902 47.0065C23.575 47.0546 23.7445 47.1303 24.2143 47.1715C24.7048 47.2174 25.351 47.2197 26.3548 47.2197C27.3562 47.2197 28.0048 47.2197 28.4952 47.1738C28.9627 47.128 29.1345 47.0546 29.2193 47.0065C29.4586 46.8647 29.6562 46.6624 29.7923 46.4199C29.8381 46.3328 29.9114 46.1586 29.9527 45.6797C29.9687 45.5055 29.9802 45.3107 29.987 45.0884ZM28.8985 18.7388C29.602 19.2522 29.7648 20.2513 29.2629 20.9686L26.5633 24.8369H29.7762C30.0653 24.8383 30.3482 24.9201 30.5935 25.0731C30.8387 25.226 31.0366 25.4442 31.165 25.7032C31.2967 25.965 31.3554 26.2576 31.3349 26.55C31.3143 26.8424 31.2152 27.1238 31.0481 27.3647L26.5839 33.7561C26.4674 33.9263 26.318 34.0713 26.1443 34.1826C25.9707 34.294 25.7765 34.3693 25.5733 34.4041C25.37 34.4389 25.1618 34.4326 24.9611 34.3855C24.7603 34.3383 24.5711 34.2513 24.4045 34.1297C24.0659 33.8782 23.8385 33.5048 23.7705 33.0886C23.7024 32.6724 23.7992 32.246 24.0402 31.8999L26.7398 28.0315H23.5268C23.2376 28.0299 22.9544 27.9478 22.7091 27.7944C22.4639 27.641 22.2661 27.4224 22.1381 27.163C22.0068 26.9014 21.9483 26.6093 21.9689 26.3174C21.9894 26.0254 22.0883 25.7444 22.255 25.5038L26.7191 19.1101C26.8356 18.9399 26.9851 18.7948 27.1587 18.6835C27.3323 18.5722 27.5265 18.4969 27.7298 18.4621C27.933 18.4272 28.1412 18.4336 28.342 18.4807C28.5427 18.5279 28.732 18.6149 28.8985 18.7365V18.7388Z" fill="white"/>
                 </svg>
-                <div class="text-white">
+                <div class="text-white black-md">
                   <p class="font-bold fs-18 mb-0">لوازم الکترونیک</p>
-                  <p class="fs-14 text-white-50 mb-0">۳۵۶۰ محصول</p>
+                  <p class="fs-14 text-center text-md-end mb-0">۳۵۶۰ محصول</p>
                 </div>
             </div>
-            <div class="rounded-13 bg-white flex-grow-1 gap-5 h-57 position-relative -top-5 w-100 d-flex align-items-center px-3 ms-3">
-              <!-- filter nav -->
-               <div class="d-flex align-items-center gap-4">
-                  <p class="fs-14 fw-bold mb-0 ms-3">مرتب سازی بر اساس:</p>
-                  <div class="d-flex align-items-center gap-4 fs-14 filter-nav">
-                    <a class="active text-gray">جدیدترین</a>
-                    <a class="text-gray">گرانترین</a>
-                    <a class="text-gray">محبوب ترین</a>
-                    <a class="text-gray">پرفروش ترین</a>
-                  </div>
+            <div class="rounded-21 overflow-hidden shadow10 bg-white flex-grow-1 gap-5 h-141 position-relative -top-41 w-100 d-flex align-items-center px-3 me-xxl-3">
+              <div class="swiper products">
+               <div class="swiper-wrapper">
+                 <div class="swiper-slide shadow13">
+                   <a class="d-flex flex-column text-center fw-bold fs-12 text-dark">
+                    <img alt="product" src="assets/img/productnum.png" class="img-fluid w-42 d-block mx-auto">
+                     <p class="mb-0 mt-2"> ۳۰۰ + محصول</p>
+                   </a>
+                 </div>
+                 <div class="swiper-slide shadow13">
+                   <a class="d-flex flex-column text-center fw-bold fs-12 text-dark">
+                    <img alt="product" src="assets/img/productnum.png" class="img-fluid w-42 d-block mx-auto">
+                     <p class="mb-0 mt-2"> ۳۰۰ + محصول</p>
+                   </a>
+                 </div>
+                 <div class="swiper-slide shadow13">
+                   <a class="d-flex flex-column text-center fw-bold fs-12 text-dark">
+                    <img alt="product" src="assets/img/productnum.png" class="img-fluid w-42 d-block mx-auto">
+                     <p class="mb-0 mt-2"> ۳۰۰ + محصول</p>
+                   </a>
+                 </div>
+                 <div class="swiper-slide shadow13">
+                   <a class="d-flex flex-column text-center fw-bold fs-12 text-dark">
+                    <img alt="product" src="assets/img/productnum.png" class="img-fluid w-42 d-block mx-auto">
+                     <p class="mb-0 mt-2"> ۳۰۰ + محصول</p>
+                   </a>
+                 </div>
+                 <div class="swiper-slide shadow13">
+                   <a class="d-flex flex-column text-center fw-bold fs-12 text-dark">
+                    <img alt="product" src="assets/img/productnum.png" class="img-fluid w-42 d-block mx-auto">
+                     <p class="mb-0 mt-2"> ۳۰۰ + محصول</p>
+                   </a>
+                 </div>
+                 <div class="swiper-slide shadow13">
+                   <a class="d-flex flex-column text-center fw-bold fs-12 text-dark">
+                    <img alt="product" src="assets/img/productnum.png" class="img-fluid w-42 d-block mx-auto">
+                     <p class="mb-0 mt-2"> ۳۰۰ + محصول</p>
+                   </a>
+                 </div>
+                 <div class="swiper-slide shadow13">
+                   <a class="d-flex flex-column text-center fw-bold fs-12 text-dark">
+                    <img alt="product" src="assets/img/productnum.png" class="img-fluid w-42 d-block mx-auto">
+                     <p class="mb-0 mt-2"> ۳۰۰ + محصول</p>
+                   </a>
+                 </div>
+                 <div class="swiper-slide shadow13">
+                   <a class="d-flex flex-column text-center fw-bold fs-12 text-dark">
+                    <img alt="product" src="assets/img/productnum.png" class="img-fluid w-42 d-block mx-auto">
+                     <p class="mb-0 mt-2"> ۳۰۰ + محصول</p>
+                   </a>
+                 </div>
+                 <div class="swiper-slide shadow13">
+                   <a class="d-flex flex-column text-center fw-bold fs-12 text-dark">
+                    <img alt="product" src="assets/img/productnum.png" class="img-fluid w-42 d-block mx-auto">
+                     <p class="mb-0 mt-2"> ۳۰۰ + محصول</p>
+                   </a>
+                 </div>
+                 <div class="swiper-slide shadow13">
+                   <a class="d-flex flex-column text-center fw-bold fs-12 text-dark">
+                    <img alt="product" src="assets/img/productnum.png" class="img-fluid w-42 d-block mx-auto">
+                     <p class="mb-0 mt-2"> ۳۰۰ + محصول</p>
+                   </a>
+                 </div>
                </div>
-               <!-- line -->
-               <svg xmlns="http://www.w3.org/2000/svg" width="1" height="37" viewBox="0 0 1 37" fill="none">
-                <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499998" y2="37" stroke="black"/>
-                </svg>
-               <!-- search -->
-               <div class="flex-grow-1 d-flex align-items-center fs-14">
-                <input placeholder="جستجو در عناوین ..." class="w-100 flex-grow-1 bg-transparent border-0 outline-none">
-                <div class="rounded-9 d-flex align-items-center justify-content-center bg-gray5 p-2">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.57987 0C10.2079 0 13.1591 2.95111 13.1591 6.57919C13.1591 8.2909 12.5022 9.85208 11.4272 11.0238L13.5424 13.1345C13.7404 13.3325 13.741 13.6527 13.5431 13.8507C13.4444 13.9507 13.314 14 13.1843 14C13.0553 14 12.9256 13.9507 12.8262 13.852L10.6855 11.7173C9.5594 12.6191 8.13155 13.1591 6.57987 13.1591C2.95179 13.1591 0 10.2073 0 6.57919C0 2.95111 2.95179 0 6.57987 0ZM6.57987 1.01343C3.51052 1.01343 1.01343 3.50985 1.01343 6.57919C1.01343 9.64853 3.51052 12.1456 6.57987 12.1456C9.64853 12.1456 12.1456 9.64853 12.1456 6.57919C12.1456 3.50985 9.64853 1.01343 6.57987 1.01343Z" fill="#0E1935"></path>
-                  </svg>
-                </div>
               </div>
             </div>
           </div>
         </div>
         <!-- product filter -->
-        <div class="row g-4 mt-4">
+        <div class="row g-4 mt-5 pt-5 pt-md-4">
           <div class="col-lg-3">
             <div class="rounded-21 shadow10 p-3">
               <div
@@ -1331,7 +1375,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-9 mt-3">
+          <div class="col-lg-9 mt-md-3 mt-5">
             <div class="row g-4 mx-0 bg-white p-2 pb-4 shadow8 rounded-21">
               <div class="col-xxl-3 col-xl-4 col-md-6">
                 <div class="rounded-21 bg-white p-3 shadow10 position-relative">
@@ -2077,10 +2121,10 @@
                 <li><a class="active">1</a></li>
                 <li><a class="text-gray">2</a></li>
                 <li><a class="text-gray">3</a></li>
-                <li><a class="text-gray d-none d-md-block">4</a></li>
-                <li><a class="text-gray d-none d-md-block">5</a></li>
-                <li><a class="text-gray d-none d-md-block">6</a></li>
-                <li><a class="text-gray d-none d-md-block">7</a></li>
+                <li class="d-none d-md-block"><a class="text-gray ">4</a></li>
+                <li class="d-none d-md-block"><a class="text-gray">5</a></li>
+                <li class="d-none d-md-block"><a class="text-gray">6</a></li>
+                <li class="d-none d-md-block"><a class="text-gray">7</a></li>
                 <li><a class="text-gray">...</a></li>
                 <li><a class="text-gray">15</a></li>
               </ul>
@@ -2101,8 +2145,8 @@
               </a>
             </div>
             <!-- not found -->
-            <div class="rounded-21 mt-4 py-5 shadow10 d-flex align-items-center justify-content-center text-center">
-              <div class="my-5 py-5">
+            <div class="rounded-21 mt-4 py-sm-5 py-4 px-3 shadow10 d-flex align-items-center justify-content-center text-center">
+              <div class="my-sm-5 py-sm-5">
                 <img alt="icon" src="assets/img/Title=No results; Cololr=purple; Fill=Gradient;.png" class="img-fluid">
                 <p class="fs-18 font-bold mt-4 mb-1">متاسفانه طبق جستجوی شما نتیجه ای در سایت یافت نشد </p>
                 <p class="text-gray">لطفا کلمات کلیدی و یا فیلتر جستجو را تغییر دهید</p>
@@ -2195,7 +2239,7 @@
         <!-- compare -->
         <div class="mt-5 pt-5">
           <!-- title -->
-          <div class="rounded-19 bg-gray6 d-flex justify-content-between p-3 position-relative">
+          <div class="rounded-19 bg-gray6 d-flex flex-column flex-md-row gap-3 justify-content-between p-3 position-relative">
             <svg class="position-absolute top-0 me-3" xmlns="http://www.w3.org/2000/svg" width="32" height="55"
               viewBox="0 0 32 55" fill="none">
               <path
@@ -2215,9 +2259,9 @@
               <p class="mb-2"><span class="font-bold">مقایسه</span> محصولات</p>
               <p class="fs-12 text-gray mb-0">مقایسه محصولات انتخابی</p>
             </div>
-            <div class="d-flex align-items-stretch gap-3">
+            <div class="d-flex align-items-md-stretch gap-3">
               <a
-                class="bg-gradient-main shadow8 text-white fw-bold px-sm-3 px-2 rounded-14 d-flex align-items-center justify-content-center gap-2 fs-14">
+                class="bg-gradient-main shadow8 text-white fw-bold px-3 py-3 py-md-0 rounded-14 d-flex align-items-center justify-content-center gap-2 fs-14">
                 <p class="mb-0">مقایسه محصولات</p>
                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16" fill="none">
                   <path
@@ -2226,7 +2270,7 @@
                 </svg>
               </a>
               <a
-                class="bg-white shadow8 text-dark px-sm-3 px-2 rounded-14 d-flex align-items-center justify-content-center gap-2 fs-14">
+                class="bg-white shadow8 text-dark px-3 py-3 py-md-0 rounded-14 d-flex align-items-center justify-content-center gap-2 fs-14">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                   <path
                     d="M3 6.52401C3 6.12901 3.327 5.81001 3.73 5.81001H8.518C8.524 4.96801 8.616 3.81501 9.45 3.01701C10.137 2.36178 11.0506 1.9974 12 2.00001C12.9494 1.9974 13.863 2.36178 14.55 3.01701C15.384 3.81501 15.476 4.96801 15.482 5.81001H20.27C20.673 5.81001 21 6.13001 21 6.52401C20.999 6.61883 20.9792 6.71251 20.942 6.79971C20.9047 6.88691 20.8507 6.96591 20.7829 7.03222C20.7151 7.09852 20.6349 7.15082 20.5469 7.18613C20.4589 7.22144 20.3648 7.23907 20.27 7.23801H3.73C3.63518 7.23907 3.54109 7.22144 3.45309 7.18613C3.36509 7.15082 3.2849 7.09852 3.21711 7.03222C3.14933 6.96591 3.09526 6.88691 3.05801 6.79971C3.02076 6.71251 3.00104 6.61883 3 6.52401Z"

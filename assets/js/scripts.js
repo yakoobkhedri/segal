@@ -197,6 +197,32 @@ var specialProduct = new Swiper(".specialProduct", {
         el: ".swiper-pagination2",
     },
 });
+var products = new Swiper(".products", {
+    slidesPerView: 2,
+    spaceBetween: 0,
+    // autoplay:true,
+    breakpoints:{
+         768:{
+            slidesPerView: 3.5,
+         },
+     992:{
+        slidesPerView: 4.5,
+     },
+     1200:{
+        slidesPerView: 5.5,
+     },
+     1400:{
+        slidesPerView: 7.5,
+     },
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+        el: ".swiper-pagination2",
+    },
+});
 
 // filter
 

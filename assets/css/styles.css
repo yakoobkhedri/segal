@@ -345,6 +345,10 @@ a {
     box-shadow: 0px 0px 40px 0px #00000033;
 }
 
+.shadow13{
+    box-shadow: -21px 0px 23px -20px lightgray !important;
+}
+
 
 /* top */
 
@@ -374,6 +378,10 @@ a {
 
 .-top-60 {
     top: -60px;
+}
+
+.-top-41 {
+    top: -41px;
 }
 
 .-top-36 {
@@ -410,6 +418,10 @@ a {
 
 .-top-25 {
     top: -25px;
+}
+
+.-top-23 {
+    top: -23px;
 }
 
 .-top-17 {
@@ -745,6 +757,10 @@ a {
     width: 38px;
 }
 
+.w-42 {
+    width: 42px;
+}
+
 .w-48 {
     width: 48px;
 }
@@ -969,6 +985,10 @@ a {
 
 .h-131 {
     height: 131px;
+}
+
+.h-141 {
+    height: 141px;
 }
 
 .h-158 {
@@ -1775,6 +1795,15 @@ input[type="number"] {
         max-width: 100%;
     }
 
+    img[src='assets/img/productsNumBg.png']{
+        position: relative;
+        top: 11px;
+    }
+
+    .black-lg{
+        color: black!important;
+    }
+
     footer {
         margin-bottom: 193px !important;
     }
@@ -1850,6 +1879,12 @@ input[type="number"] {
     .nav-pills .nav-link.active::after {
         width: 0;
         height: 0;
+    }
+    .black-md{
+        color: black!important;
+    }
+    .productNum{
+        margin-top: 5.5rem!important;
     }
 }
 
