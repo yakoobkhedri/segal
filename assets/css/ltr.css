@@ -241,6 +241,10 @@ img[src='assets/img/pageTitleBg.png'],
     border-left: 2px dashed lightgray;
     border-right: none;
 }
+.border-end {
+    border-left: 1px solid #dee2e6 !important;
+    border-right: 0!important;
+  }
 
 /* padding */
 .accordionContent .pe-4 {
@@ -296,6 +300,12 @@ img[src='assets/img/pageTitleBg.png'],
     .dropdown2>li:nth-child(9)::before {
         left: 732px;
     }
+}
+
+@media only screen and (max-width: 992px) {
+    .border-right-lg-0 {
+        border-left: 0 !important;
+      }
 }
 
 @media only screen and (max-width: 768px) {

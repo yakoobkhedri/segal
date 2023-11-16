@@ -28,26 +28,6 @@ a {
     text-decoration: none;
 }
 
-.outline-none {
-    outline: none;
-}
-
-.resize-none {
-    resize: none;
-}
-
-.cursor-pointer {
-    cursor: pointer;
-}
-
-.text-justify {
-    text-align: justify;
-}
-
-.ltr {
-    direction: ltr;
-}
-
 /* object fit */
 .object-cover {
     object-fit: cover;
@@ -1132,6 +1112,34 @@ a {
 }
 
 /* global styles */
+.outline-none {
+    outline: none;
+}
+
+.opacity-none {
+    opacity: 0;
+}
+
+.visible-none {
+    visibility: hidden;
+}
+
+.resize-none {
+    resize: none;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.ltr {
+    direction: ltr;
+}
+
 .swiper-pagination-bullet-active,
 .swiper-pagination3.swiper-pagination-bullet-active {
     background: linear-gradient(74.18deg, #5B6CCC 2.59%, #4834AC 100%);
@@ -1809,6 +1817,9 @@ input[type="number"] {
 
     .black-lg{
         color: black!important;
+    }
+    .border-right-lg-0{
+        border-right: none!important;
     }
 
     footer {
