@@ -70,7 +70,7 @@ html {
 
 /* margin */
 
-.me-auto {
+.me-auto,.ml-auto-ltr {
     margin-left: auto !important;
     margin-right: 0 !important;
 }
@@ -306,4 +306,8 @@ img[src='assets/img/pageTitleBg.png'],
     #pageTitle .bottom-53 {
         bottom: 17px;
       }
+      .ml-auto-ltr {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
   }
