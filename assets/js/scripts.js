@@ -99,6 +99,22 @@ var services = new Swiper(".services", {
         el: ".swiper-pagination3",
     },
 });
+var services2 = new Swiper(".services2", {
+    slidesPerView: 1,
+    spaceBetween: 27,
+    autoplay:true,
+    breakpoints:{
+        768:{
+            slidesPerView: 2,
+         },
+     992:{
+        slidesPerView: 3,
+     },
+     1200:{
+        slidesPerView: 4,
+     },
+    }
+});
 var customer = new Swiper(".customer", {
     loop:true,
     autoplay:true,

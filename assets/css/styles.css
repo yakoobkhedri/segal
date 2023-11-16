@@ -773,6 +773,10 @@ a {
     width: 98%;
 }
 
+.w-126 {
+    width: 126px;
+}
+
 .w-130 {
     width: 130px;
 }
@@ -903,6 +907,10 @@ a {
     height: 38px;
 }
 
+.h-45 {
+    height: 45px;
+}
+
 .h-46 {
     height: 46px;
 }
@@ -953,6 +961,10 @@ a {
 
 .h-85 {
     height: 85px;
+}
+
+.h-90 {
+    height: 90px;
 }
 
 .h-97 {
@@ -1058,6 +1070,10 @@ a {
 
 .mt-204 {
     margin-top: 204px;
+}
+
+.mt-235 {
+    margin-top: 235px;
 }
 
 .mt-245 {
