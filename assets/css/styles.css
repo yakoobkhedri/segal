@@ -971,6 +971,10 @@ a {
     height: 76px;
 }
 
+.h-85 {
+    height: 85px;
+}
+
 .h-97 {
     height: 97px;
 }
@@ -1305,6 +1309,9 @@ a {
 .pagination a:hover,
 .pagination a.active,.filter-nav a:hover,.filter-nav a.active {
     color: #4834AC;
+}
+
+.pagination a.active,.filter-nav a.active {
     font-weight: 900;
 }
 
@@ -1886,6 +1893,9 @@ input[type="number"] {
     .productNum{
         margin-top: 5.5rem!important;
     }
+    .border-md-1{
+        border: 1px solid lightgray;
+    }
 }
 
 @media only screen and (max-width:576px) {
@@ -1909,6 +1919,10 @@ input[type="number"] {
 
     #pills-tabContent .max-w-200 {
         max-width: 98px;
+    }
+
+    .w-sm-100{
+        width: 100%;
     }
 
 }
