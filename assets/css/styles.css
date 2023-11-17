@@ -684,6 +684,9 @@ a {
 .fs-24 {
     font-size: 24px;
 }
+.fs-26 {
+    font-size: 26px;
+}
 /* min width */
 .min-w-50{
     min-width: 50px;
@@ -1950,6 +1953,10 @@ input[type="number"] {
 
     .w-sm-100{
         width: 100%;
+    }
+
+    .fs-sm-14{
+        font-size: 14px;
     }
 
 }
