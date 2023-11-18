@@ -6,7 +6,14 @@ html {
 .-right-40 {
     left: -40px;
 }
-
+.-right-30-ltr{
+    right: -30px;
+    left: auto;
+}
+.-right-15-ltr{
+    right: -15px;
+    left: auto;
+}
 .-right-1 {
     left: -1px;
 }
@@ -69,7 +76,6 @@ html {
   }
 
 /* margin */
-
 .me-auto,.ml-auto-ltr {
     margin-left: auto !important;
     margin-right: 0 !important;
@@ -305,7 +311,12 @@ img[src='assets/img/pageTitleBg.png'],
         left: 732px;
     }
 }
-
+@media only screen and (max-width:1200px) {
+    .mr-5-ltr{
+        margin-right: 3rem!important;
+        margin-left: auto!important;
+    }
+}
 @media only screen and (max-width: 992px) {
     .border-right-lg-0 {
         border-left: 0 !important;
