@@ -275,7 +275,7 @@ $(document).on('click', '.addToCompare', function () {
 
             $(".comparePan").append(`   
             
-        <div  id="${productID}" class="col-xxl-3 col-xl-4 col-md-6">
+        <div  id="${productID}" class="col-xxl-3 col-xl-4 col-md-6 item">
             <div class="rounded-21 bg-white p-3 shadow10 position-relative">
           
               <div class="position-absolute left-20 cursor-pointer remove-compare">
@@ -347,5 +347,6 @@ $(document).on('click', '.addToCompare', function () {
 
    /*function to remove item from preview panel*/
    $(document).on('click', '.remove-compare', function () {
-    $(this).parent('.col-md-6').remove()
+     var productIdd=$(this).parents('.item').attr('id');
+     list.splice(productIdd, 1);
 });
