@@ -1,11 +1,11 @@
 @font-face {
-    font-family: "IRANYekan-Regular";
-    src: url('../fonts/IRANYekanXFaNum-Regular.woff') format("woff");
+    font-family: "yekanBakh-Regular";
+    src: url('../fonts/YekanBakhFaNum-Regular.woff') format("woff");
 }
 
 @font-face {
-    font-family: "IRANYekan-Bold";
-    src: url('../fonts/IRANYekanXFaNum-Bold.woff') format("woff");
+    font-family: "yekanBakh-Bold";
+    src: url('../fonts/YekanBakhFaNum-Bold.woff') format("woff");
 }
 
 html {
@@ -14,13 +14,13 @@ html {
 }
 
 body {
-    font-family: "IRANYekan-Regular";
+    font-family: "yekanBakh-Regular";
     user-select: none;
     overflow-x: hidden;
 }
 
 .font-bold {
-    font-family: "IRANYekan-Bold";
+    font-family: "yekanBakh-Bold";
 }
 
 a {
@@ -748,6 +748,11 @@ a {
 
 .max-w-370 {
     max-width: 370px;
+    width: 100%;
+}
+
+.max-w-394 {
+    max-width: 394px;
     width: 100%;
 }
 

@@ -45,6 +45,15 @@ languageLi.addEventListener('mouseover', function () {
   document.querySelector('.dropdowns').classList.remove('active');
 })
 
+// close toast
+let closeIcon=Array.from(document.getElementsByClassName('bi-x'));
+
+closeIcon.forEach((item)=>{
+  item.addEventListener('click',function () {
+    item.parentElement.classList.add('d-none');
+  })
+})
+
 // swiper
 var banner = new Swiper(".banner", {
   loop: true,
@@ -314,5 +323,5 @@ $(".compare-list").on("click", ".remove-compare-item", function () {
 });
 
 $(".compare-all").click(function () {
-  window.location.href = `/compare-products?ids=${compareItems.join(",")}`;
+  window.location.href = `./compare.html?ids=${compareItems.join(",")}`;
 });
